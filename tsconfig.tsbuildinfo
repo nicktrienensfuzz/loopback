@@ -1877,7 +1877,7 @@
         "affectsGlobalScope": false
       },
       "./src/index.ts": {
-        "version": "f8c5d1b6dd100661eb6a92666015bcffd660134c352a86434dcc6516b90d5e39",
+        "version": "09a679e772e4e1b61362984921bc3bad43caa76ba3abe6fa5fc43af6e0e687bc",
         "signature": "2950dcfa8c429f99bd992e3efebeebdc799a55e1321b4e58736c3da7c3e9ac97",
         "affectsGlobalScope": false
       },
@@ -2149,6 +2149,16 @@
       "./node_modules/@types/type-is/index.d.ts": {
         "version": "37e4c904fc4eede08a541021c074c160cf27f6a756e4459197c2711fb8b2a648",
         "signature": "37e4c904fc4eede08a541021c074c160cf27f6a756e4459197c2711fb8b2a648",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/duplexify/index.d.ts": {
+        "version": "9b24f39665305b5b404f44937cd9d774e21e192c15d919961b15a831d8358c82",
+        "signature": "9b24f39665305b5b404f44937cd9d774e21e192c15d919961b15a831d8358c82",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/long/index.d.ts": {
+        "version": "e8465811693dfe4e96ef2b3dffda539d6edfe896961b7af37b44db2c0e48532b",
+        "signature": "e8465811693dfe4e96ef2b3dffda539d6edfe896961b7af37b44db2c0e48532b",
         "affectsGlobalScope": false
       }
     },
@@ -5137,6 +5147,16 @@
         "./node_modules/@loopback/rest/dist/index.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@types/duplexify/index.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/ts3.7/index.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@types/long/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
       ]
     },
     "exportedModulesMap": {
@@ -8029,6 +8049,16 @@
         "./node_modules/@loopback/authentication/dist/index.d.ts",
         "./node_modules/@loopback/context/dist/index.d.ts",
         "./node_modules/@loopback/rest/dist/index.d.ts"
+      ],
+      "../node_modules/@types/duplexify/index.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/ts3.7/index.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@types/long/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -8461,7 +8491,9 @@
       "./src/models/todo.model.ts",
       "./src/repositories/index.ts",
       "./src/repositories/todo.repository.ts",
-      "./src/sequence.ts"
+      "./src/sequence.ts",
+      "../node_modules/@types/duplexify/index.d.ts",
+      "../node_modules/@types/long/index.d.ts"
     ]
   },
   "version": "3.9.3"
