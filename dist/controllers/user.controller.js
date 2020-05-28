@@ -80,7 +80,7 @@ let UserController = /** @class */ (() => {
         }
     };
     tslib_1.__decorate([
-        rest_1.post('/users/login', {
+        rest_1.post('/signin', {
             responses: {
                 '200': {
                     description: 'Token',

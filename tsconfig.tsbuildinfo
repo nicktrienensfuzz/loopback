@@ -1886,6 +1886,11 @@
         "signature": "d289609b56df6411204c89f5197dc2d4d19910336a10c86cd9b3af21b22e344d",
         "affectsGlobalScope": false
       },
+      "./src/sample.api-builder.ts": {
+        "version": "2ff6d23b3599a68a32b5b3a513dc38b453c4efc2c7c2e63247c31391ecd571a8",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
       "./node_modules/@types/cookiejar/index.d.ts": {
         "version": "16b7fb094ffaa5d270f934e7406e8baee2f8245cfabf6dcc20f693389f005f56",
         "signature": "16b7fb094ffaa5d270f934e7406e8baee2f8245cfabf6dcc20f693389f005f56",
@@ -2092,7 +2097,7 @@
         "affectsGlobalScope": true
       },
       "./src/controllers/user.controller.ts": {
-        "version": "8cb8a4f8e2fd6103e3a04ef5bb26f7135956bf0c6d8754e89d0693ff931af5e4",
+        "version": "4c2c79becd67f406ed3688d9b96f59a79561a27cdba5b29516d5b37ce65e4dcf",
         "signature": "707ceb2460994fab4c800372730d5c505d9f77bbf35b310ff96637c698524566",
         "affectsGlobalScope": false
       },
@@ -5140,6 +5145,14 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
         "./src/models/index.ts"
+      ],
+      "./src/sample.api-builder.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/model-api-builder/dist/index.d.ts",
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
       ],
       "./src/sequence.ts": [
         "./node_modules/@loopback/authentication/dist/index.d.ts",
@@ -8491,6 +8504,7 @@
       "./src/models/todo.model.ts",
       "./src/repositories/index.ts",
       "./src/repositories/todo.repository.ts",
+      "./src/sample.api-builder.ts",
       "./src/sequence.ts",
       "../node_modules/@types/duplexify/index.d.ts",
       "../node_modules/@types/long/index.d.ts"
