@@ -1,0 +1,73 @@
+{
+  "name": "loop",
+  "version": "1.0.0",
+  "description": "Loop",
+  "keywords": [
+    "loopback-application",
+    "loopback"
+  ],
+  "files": [
+    "README.md",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ],
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git"
+  },
+  "scripts": {
+    "build": "lb-tsc",
+    "build:watch": "lb-tsc --watch",
+    "lint": "npm run prettier:check && npm run eslint",
+    "lint:fix": "npm run eslint:fix && npm run prettier:fix",
+    "prettier:cli": "lb-prettier \"**/*.ts\" \"**/*.js\"",
+    "prettier:check": "npm run prettier:cli -- -l",
+    "prettier:fix": "npm run prettier:cli -- --write",
+    "eslint": "lb-eslint --report-unused-disable-directives .",
+    "eslint:fix": "npm run eslint -- --fix",
+    "pretest": "npm run clean && npm run build",
+    "test": "lb-mocha --allow-console-logs \"dist/__tests__\"",
+    "posttest": "npm run lint",
+    "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
+    "docker:build": "docker build -t loop .",
+    "docker:run": "docker run -p 3000:3000 -d loop",
+    "migrate": "node ./dist/migrate",
+    "prestart": "npm run build",
+    "start": "node -r source-map-support/register .",
+    "clean": "lb-clean dist *.tsbuildinfo .eslintcache"
+  },
+  "dependencies": {
+    "@loopback/authentication": "^4.2.6",
+    "@loopback/authentication-jwt": "^0.4.0",
+    "@loopback/boot": "^2.3.2",
+    "@loopback/context": "^3.8.2",
+    "@loopback/core": "^2.7.1",
+    "@loopback/openapi-v3": "^3.4.2",
+    "@loopback/repository": "^2.6.0",
+    "@loopback/rest": "^5.1.0",
+    "@loopback/rest-crud": "^0.8.6",
+    "@loopback/rest-explorer": "^2.2.3",
+    "@loopback/security": "^0.2.11",
+    "@loopback/service-proxy": "^2.3.1",
+    "@types/bcryptjs": "^2.4.2",
+    "bcryptjs": "^2.4.3",
+    "loopback-connector-rest": "^3.6.0",
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@loopback/build": "^5.4.2",
+    "@loopback/eslint-config": "^8.0.0",
+    "@loopback/http-caching-proxy": "^2.1.6",
+    "@loopback/testlab": "^3.1.6",
+    "@types/lodash": "^4.14.153",
+    "@types/node": "^10.17.24",
+    "eslint": "^7.0.0",
+    "lodash": "^4.17.15",
+    "typescript": "~3.9.2"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "types": "dist/index.d.ts"
+}
