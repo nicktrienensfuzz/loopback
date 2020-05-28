@@ -62,6 +62,7 @@ export class UserController {
     @repository(UserRepository) protected userRepository: UserRepository,
   ) {}
 
+
   @post('/signin', {
     responses: {
       '200': {
@@ -96,27 +97,34 @@ export class UserController {
   }
 
   @authenticate('jwt')
-  @get('/whoAmI', {
+  @get('/me', {
     responses: {
       '200': {
-        description: '',
+        description: 'return the current authed user',
         schema: {
-          type: 'string',
+            'x-ts-type': User,
         },
       },
     },
   })
-  async whoAmI(
+  async me(
     @inject(SecurityBindings.USER)
     currentUserProfile: UserProfile,
-  ): Promise<string> {
-    return currentUserProfile[securityId];
+  ): Promise<User> {
+    // const userProfile = this.userService.convertToUserProfile(user);
+     console.log(currentUserProfile);
+    return await this.userRepository.findById(currentUserProfile.id);
+     // const userProfile = this.userService.convertToUserProfile(currentUserProfile);
+     // console.log(userProfile);
+
+    //
+    // return currentUserProfile[securityId];
   }
 
   @post('/signup', {
     responses: {
       '200': {
-        description: 'User',
+        description: 'signup create a user',
         content: {
           'application/json': {
             schema: {

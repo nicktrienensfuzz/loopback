@@ -1,8 +1,8 @@
 {
   "ids": {
     "Todo": 5,
-    "User": 9,
-    "UserCredentials": 5
+    "User": 11,
+    "UserCredentials": 7
   },
   "models": {
     "Todo": {
@@ -15,13 +15,17 @@
       "4": "{\"username\":\"testuser1\",\"email\":\"testuser1@abc.com\",\"id\":4}",
       "string": "{\"id\":\"string\",\"realm\":\"string\",\"username\":\"string\",\"email\":\"string\",\"emailVerified\":true,\"verificationToken\":\"string\",\"additionalProp1\":{}}",
       "494c7530-3a5a-4cac-b427-71d2f1cb2121": "{\"id\":\"494c7530-3a5a-4cac-b427-71d2f1cb2121\",\"realm\":\"string\",\"username\":\"string\",\"email\":\"string\",\"emailVerified\":true,\"verificationToken\":\"string\",\"additionalProp1\":{}}",
-      "984f9bbf-538d-41e2-8ff2-b9a37ea4f729": "{\"id\":\"984f9bbf-538d-41e2-8ff2-b9a37ea4f729\",\"realm\":\"string\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"verificationToken\":\"string\",\"additionalProp1\":{}}"
+      "984f9bbf-538d-41e2-8ff2-b9a37ea4f729": "{\"id\":\"984f9bbf-538d-41e2-8ff2-b9a37ea4f729\",\"realm\":\"string\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"verificationToken\":\"string\",\"additionalProp1\":{}}",
+      "459df73d-66f5-431d-bce7-5078aaf1236c": "{\"id\":\"459df73d-66f5-431d-bce7-5078aaf1236c\",\"username\":\"Nick\",\"email\":\"nick+2@fuzz.pro\",\"emailVerified\":true,\"verificationToken\":\"testing\",\"phone\":\"360-472-0372\",\"additionalProp1\":{}}",
+      "2f30afed-be30-4372-80bb-51a118c48a90": "{\"id\":\"2f30afed-be30-4372-80bb-51a118c48a90\",\"username\":\"Nick\",\"email\":\"nick+2@fuzz.pro\",\"emailVerified\":true,\"verificationToken\":\"testing\",\"phone\":\"360-472-0372\",\"additionalProp1\":{}}"
     },
     "UserCredentials": {
       "1": "{\"password\":\"$2a$10$QrcA7GDOZ06TTXEBhuz87On8mcapb9qoU3rjWb7Z5pwBv7ZAbmXwa\",\"userId\":4,\"id\":1}",
       "e4bb84c2-867a-416f-856b-65c6630a773d": "{\"id\":\"e4bb84c2-867a-416f-856b-65c6630a773d\",\"password\":\"$2a$10$YtjHtL1yXK8aok9WOcCFRe.ARqLH8reYMkmqfOhGlrL4CNLVXEJtm\",\"userId\":\"string\"}",
       "ccd0510e-e3ce-4408-9812-5c662a2ca184": "{\"id\":\"ccd0510e-e3ce-4408-9812-5c662a2ca184\",\"password\":\"$2a$10$n38suQT/2qH6/JoTqdYnqOC0TYBN9oSznpX3y6dvXPdtzGxz4JCjC\",\"userId\":\"494c7530-3a5a-4cac-b427-71d2f1cb2121\"}",
-      "e44a1306-2d07-4f59-9913-fc04d9aa25f5": "{\"id\":\"e44a1306-2d07-4f59-9913-fc04d9aa25f5\",\"password\":\"$2a$10$FUceiJq6j8nv2dYmY8.bt.iyMTPeHQm1kixjMDp6iQ9dw8W9G5pQe\",\"userId\":\"984f9bbf-538d-41e2-8ff2-b9a37ea4f729\"}"
+      "e44a1306-2d07-4f59-9913-fc04d9aa25f5": "{\"id\":\"e44a1306-2d07-4f59-9913-fc04d9aa25f5\",\"password\":\"$2a$10$FUceiJq6j8nv2dYmY8.bt.iyMTPeHQm1kixjMDp6iQ9dw8W9G5pQe\",\"userId\":\"984f9bbf-538d-41e2-8ff2-b9a37ea4f729\"}",
+      "995e2a71-fc60-4085-9d2d-343b62ad811d": "{\"id\":\"995e2a71-fc60-4085-9d2d-343b62ad811d\",\"password\":\"$2a$10$EG/W7OX68JhBAm/bQ4oc8u6gzWxmEd.ccOHlZx3NYFul3la8ppaEy\",\"userId\":\"459df73d-66f5-431d-bce7-5078aaf1236c\"}",
+      "ae4f708e-327a-42ca-87ba-6da11b107a59": "{\"id\":\"ae4f708e-327a-42ca-87ba-6da11b107a59\",\"password\":\"$2a$10$cS4UwNsQ8o7jSh229Fki0.6Qf3KPpa/e5M9.lFHRzGefAz3ej72Ny\",\"userId\":\"2f30afed-be30-4372-80bb-51a118c48a90\"}"
     }
   }
 }
