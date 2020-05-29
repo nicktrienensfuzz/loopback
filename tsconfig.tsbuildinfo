@@ -1871,13 +1871,193 @@
         "signature": "834b70c56280af742429c81a7c992c940426144605c9604c22ffd68a9c327619",
         "affectsGlobalScope": false
       },
+      "./node_modules/@loopback/extension-logging/dist/decorators/logging.decorator.d.ts": {
+        "version": "ba8fe11e20a4583d7adafbd3f1c01a1d34f584d7eaf45fb3135943623ba8ec05",
+        "signature": "ba8fe11e20a4583d7adafbd3f1c01a1d34f584d7eaf45fb3135943623ba8ec05",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@loopback/extension-logging/dist/decorators/index.d.ts": {
+        "version": "3ad1865fd328c1498a8d715152d0b21cc622ca69adf8221239110f570e671252",
+        "signature": "3ad1865fd328c1498a8d715152d0b21cc622ca69adf8221239110f570e671252",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/fluent-logger/lib/index.d.ts": {
+        "version": "a60128614d5bde1175b2948fd88d19328d392e30a7c4be54fb8c6c9868c19792",
+        "signature": "a60128614d5bde1175b2948fd88d19328d392e30a7c4be54fb8c6c9868c19792",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/logform/index.d.ts": {
+        "version": "6dbcfbc6f4662840d93d1d9d7fb5cce1b1fa00f43caa595ffee1a70f1583a0b0",
+        "signature": "6dbcfbc6f4662840d93d1d9d7fb5cce1b1fa00f43caa595ffee1a70f1583a0b0",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/winston-transport/index.d.ts": {
+        "version": "d667ec244bc8f65d0ac176f7ea91ef9e2904e7aa10923fbbe843d19f1270593b",
+        "signature": "d667ec244bc8f65d0ac176f7ea91ef9e2904e7aa10923fbbe843d19f1270593b",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@loopback/extension-logging/dist/logging.component.d.ts": {
+        "version": "b3aa8d6b5a80e787d61f74e16b846a3570ba3882676ed0a59bf682e4f0d708ee",
+        "signature": "b3aa8d6b5a80e787d61f74e16b846a3570ba3882676ed0a59bf682e4f0d708ee",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/winston/lib/winston/config/index.d.ts": {
+        "version": "e9c33c05be71c17c3b08988fe6755605632a09c5cdd267cede8de5558ec80027",
+        "signature": "e9c33c05be71c17c3b08988fe6755605632a09c5cdd267cede8de5558ec80027",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/winston/lib/winston/transports/index.d.ts": {
+        "version": "87ccbc897e31409ff604f0b0b0f7a29efa1e51f0858aaea9ec294deec863558c",
+        "signature": "87ccbc897e31409ff604f0b0b0f7a29efa1e51f0858aaea9ec294deec863558c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/winston/index.d.ts": {
+        "version": "4bd85c7eeaceccc938121fcbd580883f6bb84d8326eb0db9c79a9961551a2bc5",
+        "signature": "4bd85c7eeaceccc938121fcbd580883f6bb84d8326eb0db9c79a9961551a2bc5",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@loopback/extension-logging/dist/winston.d.ts": {
+        "version": "0994ef871e9203b2600d4ad61fb6ba913a8c19c4ea9983fd86ef536bfc700141",
+        "signature": "0994ef871e9203b2600d4ad61fb6ba913a8c19c4ea9983fd86ef536bfc700141",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@loopback/extension-logging/dist/keys.d.ts": {
+        "version": "d896a2af246da5768ab3a95249ea1c9e347d1f11ddbafa9a92d6ba599a6c80a3",
+        "signature": "d896a2af246da5768ab3a95249ea1c9e347d1f11ddbafa9a92d6ba599a6c80a3",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@loopback/extension-logging/dist/index.d.ts": {
+        "version": "08346d5d40fcd22d5c1c15a3456bc187d90a25393d3e88c05588c630538fa07d",
+        "signature": "08346d5d40fcd22d5c1c15a3456bc187d90a25393d3e88c05588c630538fa07d",
+        "affectsGlobalScope": false
+      },
+      "./src/models/todo.model.ts": {
+        "version": "bb55479c8c45355a97007f916ccaaa304fa33f4d6e7ed6182439e006039d64ba",
+        "signature": "f36918c2c4380ab344448147b6de70cc456e9efbcb462ac6ac3f4c24269c8016",
+        "affectsGlobalScope": false
+      },
+      "./src/models/task.model.ts": {
+        "version": "028d400c13c998d495c63cca1213114e959db6f937e5219d74152b6e2838a07d",
+        "signature": "1cfb2025d3a78fc98742985a465de024f88d8e817e87330886a51d7fad211d0d",
+        "affectsGlobalScope": false
+      },
+      "./src/models/index.ts": {
+        "version": "c68cdaaafe13dd9e396b56907241421053f23bd27258fcfb3257eec19c5e15ca",
+        "signature": "ef22aaf4576fb380dfa737c087c6323ebfb0f8825c284a50c95a89a8bc63483b",
+        "affectsGlobalScope": false
+      },
+      "./src/repositories/todo.repository.ts": {
+        "version": "a7eae0183c8770100588c620afd96d33a22c937a4d5c960cc1063f23b9d2ed63",
+        "signature": "810bfc0a2ecde6da201ba8caa408cae6e2553c1d7f61d0911f5f92da8e783723",
+        "affectsGlobalScope": false
+      },
+      "./src/repositories/task.repository.ts": {
+        "version": "022267a5e11928314b7fc66010c6f85baf278f65b8b191e41794e4eedcc581f8",
+        "signature": "c37548cb386c68f4963496c0139b3b16e686cc231e94efb8fd730a399434a460",
+        "affectsGlobalScope": false
+      },
+      "./src/repositories/index.ts": {
+        "version": "37238d72c1425b2b5a7af80242edb0af9e204cc584fd8a3047ea9325b03b80fd",
+        "signature": "fb22aa4522a473b55493210eb8e3928d70c5bb02beb5fa44195e4759244d4ef8",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/lodash/ts3.1/common/common.d.ts": {
+        "version": "4025cf62742c5bb3d383c8a62342481622c87e3397ea5e7b7baab18b9efd5798",
+        "signature": "4025cf62742c5bb3d383c8a62342481622c87e3397ea5e7b7baab18b9efd5798",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/lodash/ts3.1/common/array.d.ts": {
+        "version": "f6a75f23e42dc475bdd7fefa8c527a3c5ed502ad371900abe9d138a9010ad80a",
+        "signature": "f6a75f23e42dc475bdd7fefa8c527a3c5ed502ad371900abe9d138a9010ad80a",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/lodash/ts3.1/common/collection.d.ts": {
+        "version": "0c75b204aed9cf6ff1c7b4bed87a3ece0d9d6fc857a6350c0c95ed0c38c814e8",
+        "signature": "0c75b204aed9cf6ff1c7b4bed87a3ece0d9d6fc857a6350c0c95ed0c38c814e8",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/lodash/ts3.1/common/date.d.ts": {
+        "version": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42",
+        "signature": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/lodash/ts3.1/common/function.d.ts": {
+        "version": "035b95793288bf4457a2b80bfe9b7500a29324ad62adcf9991277198e8833096",
+        "signature": "035b95793288bf4457a2b80bfe9b7500a29324ad62adcf9991277198e8833096",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/lodash/ts3.1/common/lang.d.ts": {
+        "version": "c2d47e5668f89ed8768d306919c42bb88d50d4029d68f58343141360895cfcc0",
+        "signature": "c2d47e5668f89ed8768d306919c42bb88d50d4029d68f58343141360895cfcc0",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/lodash/ts3.1/common/math.d.ts": {
+        "version": "65648639567d214f62c1b21d200c852807e68bdb08311f95ab6f526ef5b98995",
+        "signature": "65648639567d214f62c1b21d200c852807e68bdb08311f95ab6f526ef5b98995",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/lodash/ts3.1/common/number.d.ts": {
+        "version": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a",
+        "signature": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/lodash/ts3.1/common/object.d.ts": {
+        "version": "7fc5a3d7cff296cea5c225911726a56283b663328709088fcc912d61f73682fc",
+        "signature": "7fc5a3d7cff296cea5c225911726a56283b663328709088fcc912d61f73682fc",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/lodash/ts3.1/common/seq.d.ts": {
+        "version": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd",
+        "signature": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/lodash/ts3.1/common/string.d.ts": {
+        "version": "e34f3f6159b1e23de9bb5521382795aaa5aaed6f53b4702e70a2ec45bc76ddb5",
+        "signature": "e34f3f6159b1e23de9bb5521382795aaa5aaed6f53b4702e70a2ec45bc76ddb5",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/lodash/ts3.1/common/util.d.ts": {
+        "version": "2630a7cbb597e85d713b7ef47f2946d4280d3d4c02733282770741d40672b1a5",
+        "signature": "2630a7cbb597e85d713b7ef47f2946d4280d3d4c02733282770741d40672b1a5",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/lodash/ts3.1/index.d.ts": {
+        "version": "bbf144d4354e2aaa6439f32761f3ee798cc68d1600adab6e2a596f25269f106d",
+        "signature": "bbf144d4354e2aaa6439f32761f3ee798cc68d1600adab6e2a596f25269f106d",
+        "affectsGlobalScope": true
+      },
+      "./src/controllers/todo.controller.ts": {
+        "version": "07bdbb83bbb6bdd755e10110abe66e9d26902b314bef9ae6e1a6ecbaf3066252",
+        "signature": "bac251205979fc3b2cd4e8fe69b410d43f85218968c73d274a878b16db32887c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/bcryptjs/index.d.ts": {
+        "version": "9dfe431ab1485e17a6055e186c49da9d23af74b965f2e99f8acc6c958778608f",
+        "signature": "9dfe431ab1485e17a6055e186c49da9d23af74b965f2e99f8acc6c958778608f",
+        "affectsGlobalScope": false
+      },
+      "./src/controllers/user.controller.ts": {
+        "version": "3496dcda92ddbd683a82d7d51caf271c2cb374dfa1e4686bafeef9b1ee7ffb4c",
+        "signature": "cbdec217642f79bcc58dc45cfed4d7866eb020ba96ddcae15959b0ad99423304",
+        "affectsGlobalScope": false
+      },
+      "./src/controllers/ping.controller.ts": {
+        "version": "a8846bf32c666fbf475ad6826adc2e50e8420b4353c4083e1ccdb28d5ffe4a2a",
+        "signature": "80e3e158fbbb22cab068c3f91ec262086822f90ca629e02984060b8caf571993",
+        "affectsGlobalScope": false
+      },
+      "./src/controllers/index.ts": {
+        "version": "965534126c1396e8843840b72f9a1ae0420b47026838db12304c7bc65c80dea0",
+        "signature": "f1db145422e78fd1ff8151d177c2ee8f808742b0e29bdf52bf3b7344b5046810",
+        "affectsGlobalScope": false
+      },
       "./src/application.ts": {
-        "version": "e2d803c512031a095ec2d13086e76ba0458bef13680c510afae27ad9a9eea713",
+        "version": "7419509bddcbe4780be99a30a8e39e08dc279f2cfed8a0ba8ce75c205bca93b3",
         "signature": "5a9cb5a23edc9b0d74022e6f2324c034bfc344662d5f24bf0d527786459ce88c",
         "affectsGlobalScope": false
       },
       "./src/index.ts": {
-        "version": "09a679e772e4e1b61362984921bc3bad43caa76ba3abe6fa5fc43af6e0e687bc",
+        "version": "0671994e9b31ea13c3d692cfd53d907c1786f155cc024b8810df8940a5168ca0",
         "signature": "2950dcfa8c429f99bd992e3efebeebdc799a55e1321b4e58736c3da7c3e9ac97",
         "affectsGlobalScope": false
       },
@@ -2001,114 +2181,9 @@
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
-      "./src/models/todo.model.ts": {
-        "version": "bb55479c8c45355a97007f916ccaaa304fa33f4d6e7ed6182439e006039d64ba",
-        "signature": "f36918c2c4380ab344448147b6de70cc456e9efbcb462ac6ac3f4c24269c8016",
-        "affectsGlobalScope": false
-      },
-      "./src/models/index.ts": {
-        "version": "3239a822ef0182547c65466b88b22f90330ae369ea8701e82486eed84cb2bb10",
-        "signature": "4bb30bc881aaa5f0532df9457e25909cb8c4c611ab304c0ddc13bb3cf4987284",
-        "affectsGlobalScope": false
-      },
-      "./src/repositories/todo.repository.ts": {
-        "version": "a7eae0183c8770100588c620afd96d33a22c937a4d5c960cc1063f23b9d2ed63",
-        "signature": "810bfc0a2ecde6da201ba8caa408cae6e2553c1d7f61d0911f5f92da8e783723",
-        "affectsGlobalScope": false
-      },
-      "./src/repositories/index.ts": {
-        "version": "598dcdeedbed700a1ebaeec0b4fca9deab22796468710fd437ac24349998569d",
-        "signature": "5beaa836af26b3f9e0a14c1f07aa981c4c4243526f76845ba6bd09ffba20724a",
-        "affectsGlobalScope": false
-      },
-      "./src/controllers/todo.controller.ts": {
-        "version": "7e7878a374f53ab14e5d6c85a7086b6b2bdda5c5bb15bfc691b9ac8626b5af8f",
-        "signature": "3e23905bc37495b42522a022a1ba78a96886ecc94e7f285cdbdd4b1df75801b8",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/bcryptjs/index.d.ts": {
-        "version": "9dfe431ab1485e17a6055e186c49da9d23af74b965f2e99f8acc6c958778608f",
-        "signature": "9dfe431ab1485e17a6055e186c49da9d23af74b965f2e99f8acc6c958778608f",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/lodash/ts3.1/common/common.d.ts": {
-        "version": "4025cf62742c5bb3d383c8a62342481622c87e3397ea5e7b7baab18b9efd5798",
-        "signature": "4025cf62742c5bb3d383c8a62342481622c87e3397ea5e7b7baab18b9efd5798",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/lodash/ts3.1/common/array.d.ts": {
-        "version": "f6a75f23e42dc475bdd7fefa8c527a3c5ed502ad371900abe9d138a9010ad80a",
-        "signature": "f6a75f23e42dc475bdd7fefa8c527a3c5ed502ad371900abe9d138a9010ad80a",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/lodash/ts3.1/common/collection.d.ts": {
-        "version": "0c75b204aed9cf6ff1c7b4bed87a3ece0d9d6fc857a6350c0c95ed0c38c814e8",
-        "signature": "0c75b204aed9cf6ff1c7b4bed87a3ece0d9d6fc857a6350c0c95ed0c38c814e8",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/lodash/ts3.1/common/date.d.ts": {
-        "version": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42",
-        "signature": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/lodash/ts3.1/common/function.d.ts": {
-        "version": "035b95793288bf4457a2b80bfe9b7500a29324ad62adcf9991277198e8833096",
-        "signature": "035b95793288bf4457a2b80bfe9b7500a29324ad62adcf9991277198e8833096",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/lodash/ts3.1/common/lang.d.ts": {
-        "version": "c2d47e5668f89ed8768d306919c42bb88d50d4029d68f58343141360895cfcc0",
-        "signature": "c2d47e5668f89ed8768d306919c42bb88d50d4029d68f58343141360895cfcc0",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/lodash/ts3.1/common/math.d.ts": {
-        "version": "65648639567d214f62c1b21d200c852807e68bdb08311f95ab6f526ef5b98995",
-        "signature": "65648639567d214f62c1b21d200c852807e68bdb08311f95ab6f526ef5b98995",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/lodash/ts3.1/common/number.d.ts": {
-        "version": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a",
-        "signature": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/lodash/ts3.1/common/object.d.ts": {
-        "version": "7fc5a3d7cff296cea5c225911726a56283b663328709088fcc912d61f73682fc",
-        "signature": "7fc5a3d7cff296cea5c225911726a56283b663328709088fcc912d61f73682fc",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/lodash/ts3.1/common/seq.d.ts": {
-        "version": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd",
-        "signature": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/lodash/ts3.1/common/string.d.ts": {
-        "version": "e34f3f6159b1e23de9bb5521382795aaa5aaed6f53b4702e70a2ec45bc76ddb5",
-        "signature": "e34f3f6159b1e23de9bb5521382795aaa5aaed6f53b4702e70a2ec45bc76ddb5",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/lodash/ts3.1/common/util.d.ts": {
-        "version": "2630a7cbb597e85d713b7ef47f2946d4280d3d4c02733282770741d40672b1a5",
-        "signature": "2630a7cbb597e85d713b7ef47f2946d4280d3d4c02733282770741d40672b1a5",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/lodash/ts3.1/index.d.ts": {
-        "version": "bbf144d4354e2aaa6439f32761f3ee798cc68d1600adab6e2a596f25269f106d",
-        "signature": "bbf144d4354e2aaa6439f32761f3ee798cc68d1600adab6e2a596f25269f106d",
-        "affectsGlobalScope": true
-      },
-      "./src/controllers/user.controller.ts": {
-        "version": "4c2c79becd67f406ed3688d9b96f59a79561a27cdba5b29516d5b37ce65e4dcf",
-        "signature": "707ceb2460994fab4c800372730d5c505d9f77bbf35b310ff96637c698524566",
-        "affectsGlobalScope": false
-      },
-      "./src/controllers/ping.controller.ts": {
-        "version": "345e766a5a8233c79f1c11b09cfcd1b635bc462ace7ae1ce6b84b3fd8078384d",
-        "signature": "80e3e158fbbb22cab068c3f91ec262086822f90ca629e02984060b8caf571993",
-        "affectsGlobalScope": false
-      },
-      "./src/controllers/index.ts": {
-        "version": "965534126c1396e8843840b72f9a1ae0420b47026838db12304c7bc65c80dea0",
-        "signature": "f1db145422e78fd1ff8151d177c2ee8f808742b0e29bdf52bf3b7344b5046810",
+      "./src/controllers/task.controller.ts": {
+        "version": "f1e0de3ec78fed489de74711a0d15ca30056628a98c436d0e9cc9bd47546b50e",
+        "signature": "599bffbd8f9628477babb18e07ca0de8d8f6affcb628b19a0c2d6156948fc715",
         "affectsGlobalScope": false
       },
       "./src/model-endpoints/todo.rest-config.ts": {
@@ -2901,6 +2976,45 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
+      "./node_modules/@loopback/extension-logging/dist/decorators/index.d.ts": [
+        "./node_modules/@loopback/extension-logging/dist/decorators/logging.decorator.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@loopback/extension-logging/dist/decorators/logging.decorator.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@loopback/extension-logging/dist/index.d.ts": [
+        "./node_modules/@loopback/extension-logging/dist/decorators/index.d.ts",
+        "./node_modules/@loopback/extension-logging/dist/keys.d.ts",
+        "./node_modules/@loopback/extension-logging/dist/logging.component.d.ts",
+        "./node_modules/@loopback/extension-logging/dist/winston.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@loopback/extension-logging/dist/keys.d.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/extension-logging/dist/logging.component.d.ts",
+        "./node_modules/@loopback/extension-logging/dist/winston.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/fluent-logger/lib/index.d.ts",
+        "./node_modules/winston-transport/index.d.ts"
+      ],
+      "./node_modules/@loopback/extension-logging/dist/logging.component.d.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@loopback/extension-logging/dist/winston.d.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/logform/index.d.ts",
+        "./node_modules/winston-transport/index.d.ts",
+        "./node_modules/winston/index.d.ts"
+      ],
       "./node_modules/@loopback/http-server/dist/http-server.d.ts": [
         "./node_modules/@types/node/http.d.ts",
         "./node_modules/@types/node/https.d.ts",
@@ -4718,6 +4832,16 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
+      "./node_modules/fluent-logger/lib/index.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/ts3.7/index.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/logform/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
       "./node_modules/loopback-datasource-juggler/index.d.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -5027,6 +5151,35 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
+      "./node_modules/winston-transport/index.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/ts3.7/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/logform/index.d.ts"
+      ],
+      "./node_modules/winston/index.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/ts3.7/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/logform/index.d.ts",
+        "./node_modules/winston-transport/index.d.ts",
+        "./node_modules/winston/lib/winston/config/index.d.ts",
+        "./node_modules/winston/lib/winston/transports/index.d.ts"
+      ],
+      "./node_modules/winston/lib/winston/config/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/ts3.7/index.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/winston/lib/winston/transports/index.d.ts": [
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/ts3.7/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/winston-transport/index.d.ts"
+      ],
       "./src/__tests__/acceptance/home-page.acceptance.ts": [
         "./node_modules/@loopback/testlab/dist/index.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
@@ -5052,6 +5205,7 @@
         "./node_modules/@loopback/authentication/dist/index.d.ts",
         "./node_modules/@loopback/boot/dist/index.d.ts",
         "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/extension-logging/dist/index.d.ts",
         "./node_modules/@loopback/repository/dist/index.d.ts",
         "./node_modules/@loopback/rest-crud/dist/index.d.ts",
         "./node_modules/@loopback/rest-explorer/dist/index.d.ts",
@@ -5060,6 +5214,7 @@
         "./node_modules/@types/node/path.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
+        "./src/controllers/index.ts",
         "./src/datasources/index.ts",
         "./src/sequence.ts"
       ],
@@ -5073,13 +5228,32 @@
       "./src/controllers/ping.controller.ts": [
         "./node_modules/@loopback/context/dist/index.d.ts",
         "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@types/lodash/ts3.1/index.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
-      "./src/controllers/todo.controller.ts": [
+      "./src/controllers/task.controller.ts": [
+        "./node_modules/@loopback/authentication-jwt/dist/index.d.ts",
         "./node_modules/@loopback/authentication/dist/index.d.ts",
+        "./node_modules/@loopback/context/dist/index.d.ts",
         "./node_modules/@loopback/repository/dist/index.d.ts",
         "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@loopback/security/dist/index.d.ts",
+        "./node_modules/@types/express/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/models/index.ts",
+        "./src/repositories/index.ts"
+      ],
+      "./src/controllers/todo.controller.ts": [
+        "./node_modules/@loopback/authentication-jwt/dist/index.d.ts",
+        "./node_modules/@loopback/authentication/dist/index.d.ts",
+        "./node_modules/@loopback/context/dist/index.d.ts",
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@loopback/security/dist/index.d.ts",
+        "./node_modules/@types/lodash/ts3.1/index.d.ts",
+        "./node_modules/@types/node/os.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
         "./src/models/index.ts",
@@ -5095,7 +5269,8 @@
         "./node_modules/@types/bcryptjs/index.d.ts",
         "./node_modules/@types/lodash/ts3.1/index.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts"
+        "./node_modules/@types/node/util.d.ts",
+        "./src/models/index.ts"
       ],
       "./src/datasources/db.datasource.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
@@ -5109,6 +5284,7 @@
         "./src/datasources/db.datasource.ts"
       ],
       "./src/index.ts": [
+        "./node_modules/@loopback/extension-logging/dist/index.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
         "./src/application.ts"
@@ -5127,7 +5303,13 @@
       "./src/models/index.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
+        "./src/models/task.model.ts",
         "./src/models/todo.model.ts"
+      ],
+      "./src/models/task.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
       ],
       "./src/models/todo.model.ts": [
         "./node_modules/@loopback/repository/dist/index.d.ts",
@@ -5137,7 +5319,15 @@
       "./src/repositories/index.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
+        "./src/repositories/task.repository.ts",
         "./src/repositories/todo.repository.ts"
+      ],
+      "./src/repositories/task.repository.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/models/index.ts"
       ],
       "./src/repositories/todo.repository.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
@@ -5883,6 +6073,45 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
+      "./node_modules/@loopback/extension-logging/dist/decorators/index.d.ts": [
+        "./node_modules/@loopback/extension-logging/dist/decorators/logging.decorator.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@loopback/extension-logging/dist/decorators/logging.decorator.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@loopback/extension-logging/dist/index.d.ts": [
+        "./node_modules/@loopback/extension-logging/dist/decorators/index.d.ts",
+        "./node_modules/@loopback/extension-logging/dist/keys.d.ts",
+        "./node_modules/@loopback/extension-logging/dist/logging.component.d.ts",
+        "./node_modules/@loopback/extension-logging/dist/winston.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@loopback/extension-logging/dist/keys.d.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/extension-logging/dist/logging.component.d.ts",
+        "./node_modules/@loopback/extension-logging/dist/winston.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/fluent-logger/lib/index.d.ts",
+        "./node_modules/winston-transport/index.d.ts"
+      ],
+      "./node_modules/@loopback/extension-logging/dist/logging.component.d.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@loopback/extension-logging/dist/winston.d.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/logform/index.d.ts",
+        "./node_modules/winston-transport/index.d.ts",
+        "./node_modules/winston/index.d.ts"
+      ],
       "./node_modules/@loopback/http-server/dist/http-server.d.ts": [
         "./node_modules/@types/node/http.d.ts",
         "./node_modules/@types/node/https.d.ts",
@@ -7700,6 +7929,16 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
+      "./node_modules/fluent-logger/lib/index.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/ts3.7/index.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/logform/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
       "./node_modules/loopback-datasource-juggler/index.d.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -8009,6 +8248,35 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
+      "./node_modules/winston-transport/index.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/ts3.7/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/logform/index.d.ts"
+      ],
+      "./node_modules/winston/index.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/ts3.7/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/logform/index.d.ts",
+        "./node_modules/winston-transport/index.d.ts",
+        "./node_modules/winston/lib/winston/config/index.d.ts",
+        "./node_modules/winston/lib/winston/transports/index.d.ts"
+      ],
+      "./node_modules/winston/lib/winston/config/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/ts3.7/index.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/winston/lib/winston/transports/index.d.ts": [
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/ts3.7/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/winston-transport/index.d.ts"
+      ],
       "./src/__tests__/acceptance/test-helper.ts": [
         "./node_modules/@loopback/testlab/dist/index.d.ts",
         "./src/index.ts"
@@ -8028,10 +8296,26 @@
       "./src/controllers/ping.controller.ts": [
         "./node_modules/@loopback/rest/dist/index.d.ts"
       ],
+      "./src/controllers/task.controller.ts": [
+        "./node_modules/@loopback/authentication-jwt/dist/index.d.ts",
+        "./node_modules/@loopback/authentication/dist/index.d.ts",
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/@loopback/security/dist/index.d.ts",
+        "./node_modules/@types/express/index.d.ts",
+        "./src/models/index.ts",
+        "./src/repositories/index.ts"
+      ],
       "./src/controllers/todo.controller.ts": [
-        "./node_modules/@loopback/repository/dist/index.d.ts"
+        "./node_modules/@loopback/authentication-jwt/dist/index.d.ts",
+        "./node_modules/@loopback/authentication/dist/index.d.ts",
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@loopback/security/dist/index.d.ts",
+        "./src/models/index.ts",
+        "./src/repositories/index.ts"
       ],
       "./src/controllers/user.controller.ts": [
+        "./node_modules/@loopback/authentication-jwt/dist/index.d.ts",
         "./node_modules/@loopback/authentication/dist/index.d.ts",
         "./node_modules/@loopback/security/dist/index.d.ts"
       ],
@@ -8046,13 +8330,22 @@
         "./src/application.ts"
       ],
       "./src/models/index.ts": [
+        "./src/models/task.model.ts",
         "./src/models/todo.model.ts"
+      ],
+      "./src/models/task.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts"
       ],
       "./src/models/todo.model.ts": [
         "./node_modules/@loopback/repository/dist/index.d.ts"
       ],
       "./src/repositories/index.ts": [
+        "./src/repositories/task.repository.ts",
         "./src/repositories/todo.repository.ts"
+      ],
+      "./src/repositories/task.repository.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/models/index.ts"
       ],
       "./src/repositories/todo.repository.ts": [
         "./node_modules/@loopback/repository/dist/index.d.ts",
@@ -8169,6 +8462,12 @@
       "./node_modules/@loopback/express/dist/mixins/middleware.mixin.d.ts",
       "./node_modules/@loopback/express/dist/providers/invoke-middleware.provider.d.ts",
       "./node_modules/@loopback/express/dist/types.d.ts",
+      "./node_modules/@loopback/extension-logging/dist/decorators/index.d.ts",
+      "./node_modules/@loopback/extension-logging/dist/decorators/logging.decorator.d.ts",
+      "./node_modules/@loopback/extension-logging/dist/index.d.ts",
+      "./node_modules/@loopback/extension-logging/dist/keys.d.ts",
+      "./node_modules/@loopback/extension-logging/dist/logging.component.d.ts",
+      "./node_modules/@loopback/extension-logging/dist/winston.d.ts",
       "./node_modules/@loopback/http-server/dist/http-server.d.ts",
       "./node_modules/@loopback/http-server/dist/index.d.ts",
       "./node_modules/@loopback/metadata/dist/decorator-factory.d.ts",
@@ -8424,6 +8723,8 @@
       "./node_modules/@types/supertest/index.d.ts",
       "./node_modules/@types/type-is/index.d.ts",
       "./node_modules/ajv/lib/ajv.d.ts",
+      "./node_modules/fluent-logger/lib/index.d.ts",
+      "./node_modules/logform/index.d.ts",
       "./node_modules/loopback-datasource-juggler/index.d.ts",
       "./node_modules/loopback-datasource-juggler/types/common.d.ts",
       "./node_modules/loopback-datasource-juggler/types/connector.d.ts",
@@ -8487,12 +8788,17 @@
       "./node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
       "./node_modules/typescript/lib/lib.es5.d.ts",
       "./node_modules/typescript/lib/lib.esnext.intl.d.ts",
+      "./node_modules/winston-transport/index.d.ts",
+      "./node_modules/winston/index.d.ts",
+      "./node_modules/winston/lib/winston/config/index.d.ts",
+      "./node_modules/winston/lib/winston/transports/index.d.ts",
       "./src/__tests__/acceptance/home-page.acceptance.ts",
       "./src/__tests__/acceptance/ping.controller.acceptance.ts",
       "./src/__tests__/acceptance/test-helper.ts",
       "./src/application.ts",
       "./src/controllers/index.ts",
       "./src/controllers/ping.controller.ts",
+      "./src/controllers/task.controller.ts",
       "./src/controllers/todo.controller.ts",
       "./src/controllers/user.controller.ts",
       "./src/datasources/db.datasource.ts",
@@ -8501,8 +8807,10 @@
       "./src/migrate.ts",
       "./src/model-endpoints/todo.rest-config.ts",
       "./src/models/index.ts",
+      "./src/models/task.model.ts",
       "./src/models/todo.model.ts",
       "./src/repositories/index.ts",
+      "./src/repositories/task.repository.ts",
       "./src/repositories/todo.repository.ts",
       "./src/sample.api-builder.ts",
       "./src/sequence.ts",

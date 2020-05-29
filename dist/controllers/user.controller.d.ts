@@ -35,6 +35,6 @@ export declare class UserController {
     login(credentials: Credentials): Promise<{
         token: string;
     }>;
-    whoAmI(currentUserProfile: UserProfile): Promise<string>;
-    signUp(newUserRequest: NewUserRequest): Promise<User>;
+    me(currentUserProfile: UserProfile): Promise<User>;
+    signUp(newUserRequest: Omit<NewUserRequest, 'id'>): Promise<User>;
 }

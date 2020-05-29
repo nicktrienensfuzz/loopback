@@ -6,7 +6,6 @@
 import {authenticate, TokenService} from '@loopback/authentication';
 import {Filter, repository} from '@loopback/repository';
 import {
-  Request,
   del,
   get,
   getModelSchemaRef,
@@ -16,140 +15,127 @@ import {
   put,
   requestBody, RestBindings,
 } from '@loopback/rest';
-
-import {
-  Credentials,
-  MyUserService,
-  TokenServiceBindings,
-  User,
-  UserRepository,
-  UserServiceBindings,
-} from '@loopback/authentication-jwt';
-
-import {Todo} from '../models';
-import {TodoRepository} from '../repositories';
+import {Task} from '../models';
+import {TaskRepository} from '../repositories';
 import {inject} from "@loopback/context";
+import {Request} from "express";
+import {MyUserService, TokenServiceBindings, User, UserServiceBindings} from "@loopback/authentication-jwt";
 import {SecurityBindings, UserProfile} from "@loopback/security";
-import {loadavg} from "os";
-import _ from 'lodash';
 
-
-export class TodoController {
+export class TaskController {
   constructor(
-      @inject(RestBindings.Http.REQUEST) private req: Request,
-    @repository(TodoRepository) protected todoRepository: TodoRepository,
+    @repository(TaskRepository) protected todoRepository: TaskRepository,
+    @inject(RestBindings.Http.REQUEST) private req: Request,
     @inject(TokenServiceBindings.TOKEN_SERVICE) public jwtService: TokenService,
     @inject(UserServiceBindings.USER_SERVICE) public userService: MyUserService,
     @inject(SecurityBindings.USER, {optional: true}) public user: User,
-    //@inject(LoggingBindings.WINSTON_LOGGER) private logger: Logger
   ) {}
 
-
-  @post('/todos', {
+  @post('/tasks', {
     responses: {
       '200': {
-        description: 'Todo model instance, nick',
-        content: {'application/json': {schema: getModelSchemaRef(Todo)}},
+        description: 'Task model instance',
+        content: {'application/json': {schema: getModelSchemaRef(Task)}},
       },
     },
   })
   @authenticate('jwt')
-  async createTodo(
-    @requestBody({
-      content: {
-        'application/json': {
-          schema: getModelSchemaRef(Todo, {title: 'NewTodo', exclude: ['id']}),
+  async createTask(
+      @requestBody({
+        content: {
+          'application/json': {
+            schema: getModelSchemaRef(Task, {title: 'NewTask', exclude: ['id']}),
+          },
         },
-      },
-    })
-    todo: Omit<Todo, 'id'>,
-    @inject(SecurityBindings.USER) currentUserProfile: UserProfile
-  ): Promise<Todo> {
+      })
+          todo: Omit<Task, 'id'>,
+      @inject(SecurityBindings.USER) currentUserProfile: UserProfile
+  ): Promise<Task> {
     console.log("new item made")
     console.log(this.user)
     console.log(todo)
-    throw  currentUserProfile
-    //return this.todoRepository.create(todo)
+    //throw  currentUserProfile
+    return this.todoRepository.create(todo)
 
   }
 
-  @get('/todos/{id}', {
+  @get('/tasks/{id}', {
     responses: {
       '200': {
-        description: 'Todo model instance',
-        content: {'application/json': {schema: getModelSchemaRef(Todo)}},
+        description: 'Task model instance',
+        content: {'application/json': {schema: getModelSchemaRef(Task)}},
       },
     },
   })
-  async findTodoById(
+  async findTaskById(
     @param.path.number('id') id: number,
     @param.query.boolean('items') items?: boolean,
-  ): Promise<Todo> {
+  ): Promise<Task> {
     return this.todoRepository.findById(id);
   }
 
-  @get('/todos', {
+  @get('/tasks', {
     responses: {
       '200': {
-        description: 'Array of Todo model instances',
+        description: 'Array of Task model instances',
         content: {
           'application/json': {
-            schema: {type: 'array', items: getModelSchemaRef(Todo)},
+            schema: {type: 'array', items: getModelSchemaRef(Task)},
           },
         },
       },
     },
   })
-  async findTodos(
-    @param.filter(Todo)
-    filter?: Filter<Todo>,
-  ): Promise<Todo[]> {
+  async findTasks(
+    @param.filter(Task)
+    filter?: Filter<Task>,
+  ): Promise<Task[]> {
     return this.todoRepository.find(filter);
   }
 
-  @put('/todos/{id}', {
+  @put('/tasks/{id}', {
     responses: {
       '204': {
-        description: 'Todo PUT success',
+        description: 'Task PUT success',
       },
     },
   })
-  async replaceTodo(
+  async replaceTask(
     @param.path.number('id') id: number,
-    @requestBody() todo: Todo,
+    @requestBody() todo: Task,
   ): Promise<void> {
     await this.todoRepository.replaceById(id, todo);
   }
 
-  @patch('/todos/{id}', {
+  @patch('/tasks/{id}', {
     responses: {
       '204': {
-        description: 'Todo PATCH success',
+        description: 'Task PATCH success',
       },
     },
   })
-  async updateTodo(
+  async updateTask(
     @param.path.number('id') id: number,
     @requestBody({
       content: {
         'application/json': {
-          schema: getModelSchemaRef(Todo, {partial: true}),
+          schema: getModelSchemaRef(Task, {partial: true}),
         },
       },
     })
-    todo: Partial<Todo>,
+    todo: Partial<Task>,
   ): Promise<void> {
     await this.todoRepository.updateById(id, todo);
   }
 
-  @del('/todos/{id}', {
+  @del('/tasks/{id}', {
     responses: {
       '204': {
-        description: 'Todo DELETE success',
+        description: 'Task DELETE success',
       },
     },
   })
-  async deleteTodo(@param.path.number('id') id: number): Promise<void> {
+  async deleteTask(@param.path.number('id') id: number): Promise<void> {
     await this.todoRepository.deleteById(id);
   }
 }

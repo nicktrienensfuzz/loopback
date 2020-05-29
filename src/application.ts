@@ -17,6 +17,8 @@ import path from 'path';
 import {MySequence} from './sequence';
 import {CrudRestComponent} from '@loopback/rest-crud';
 import {DbDataSource} from './datasources';
+import {LoggingComponent} from '@loopback/extension-logging';
+import {TodoController} from "./controllers";
 
 export {ApplicationConfig};
 
@@ -29,8 +31,11 @@ export class LoopApplication extends BootMixin(
     // Set up the custom sequence
     this.sequence(MySequence);
 
+    // this.component(LoggingComponent);
+
     // Set up default home page
     this.static('/', path.join(__dirname, '../public'));
+
 
     // Customize @loopback/rest-explorer configuration here
     this.configure(RestExplorerBindings.COMPONENT).to({
@@ -48,6 +53,9 @@ export class LoopApplication extends BootMixin(
         nested: true,
       },
     };
+
+   // this.controller(TodoController);
+
     this.component(CrudRestComponent);
       // ------ ADD SNIPPET AT THE BOTTOM ---------
     // Mount authentication system

@@ -1,14 +1,20 @@
 import {ApplicationConfig, LoopApplication} from './application';
+import {LoggingBindings} from "@loopback/extension-logging";
 
 export * from './application';
 
 export async function main(options: ApplicationConfig = {}) {
   const app = new LoopApplication(options);
+  // app.configure(LoggingBindings.COMPONENT).to({
+  //   enableFluent: false, // default to true
+  //   enableHttpAccessLog: true, // default to true
+  // });
   await app.boot();
   await app.start();
 
   const url = app.restServer.url;
   console.log(`Server is running at ${url}`);
+
 
   return app;
 }

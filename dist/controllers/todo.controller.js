@@ -9,15 +9,26 @@ const tslib_1 = require("tslib");
 const authentication_1 = require("@loopback/authentication");
 const repository_1 = require("@loopback/repository");
 const rest_1 = require("@loopback/rest");
+const authentication_jwt_1 = require("@loopback/authentication-jwt");
 const models_1 = require("../models");
 const repositories_1 = require("../repositories");
+const context_1 = require("@loopback/context");
+const security_1 = require("@loopback/security");
 let TodoController = /** @class */ (() => {
     let TodoController = class TodoController {
-        constructor(todoRepository) {
+        constructor(req, todoRepository, jwtService, userService, user) {
+            this.req = req;
             this.todoRepository = todoRepository;
+            this.jwtService = jwtService;
+            this.userService = userService;
+            this.user = user;
         }
-        async createTodo(todo) {
-            return this.todoRepository.create(todo);
+        async createTodo(todo, currentUserProfile) {
+            console.log("new item made");
+            console.log(this.user);
+            console.log(todo);
+            throw currentUserProfile;
+            //return this.todoRepository.create(todo)
         }
         async findTodoById(id, items) {
             return this.todoRepository.findById(id);
@@ -39,11 +50,12 @@ let TodoController = /** @class */ (() => {
         rest_1.post('/todos', {
             responses: {
                 '200': {
-                    description: 'Todo model instance',
+                    description: 'Todo model instance, nick',
                     content: { 'application/json': { schema: rest_1.getModelSchemaRef(models_1.Todo) } },
                 },
             },
         }),
+        authentication_1.authenticate('jwt'),
         tslib_1.__param(0, rest_1.requestBody({
             content: {
                 'application/json': {
@@ -51,8 +63,9 @@ let TodoController = /** @class */ (() => {
                 },
             },
         })),
+        tslib_1.__param(1, context_1.inject(security_1.SecurityBindings.USER)),
         tslib_1.__metadata("design:type", Function),
-        tslib_1.__metadata("design:paramtypes", [Object]),
+        tslib_1.__metadata("design:paramtypes", [Object, Object]),
         tslib_1.__metadata("design:returntype", Promise)
     ], TodoController.prototype, "createTodo", null);
     tslib_1.__decorate([
@@ -136,9 +149,13 @@ let TodoController = /** @class */ (() => {
         tslib_1.__metadata("design:returntype", Promise)
     ], TodoController.prototype, "deleteTodo", null);
     TodoController = tslib_1.__decorate([
-        authentication_1.authenticate('jwt'),
-        tslib_1.__param(0, repository_1.repository(repositories_1.TodoRepository)),
-        tslib_1.__metadata("design:paramtypes", [repositories_1.TodoRepository])
+        tslib_1.__param(0, context_1.inject(rest_1.RestBindings.Http.REQUEST)),
+        tslib_1.__param(1, repository_1.repository(repositories_1.TodoRepository)),
+        tslib_1.__param(2, context_1.inject(authentication_jwt_1.TokenServiceBindings.TOKEN_SERVICE)),
+        tslib_1.__param(3, context_1.inject(authentication_jwt_1.UserServiceBindings.USER_SERVICE)),
+        tslib_1.__param(4, context_1.inject(security_1.SecurityBindings.USER, { optional: true })),
+        tslib_1.__metadata("design:paramtypes", [Object, repositories_1.TodoRepository, Object, authentication_jwt_1.MyUserService,
+            authentication_jwt_1.User])
     ], TodoController);
     return TodoController;
 })();

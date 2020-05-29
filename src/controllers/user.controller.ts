@@ -18,6 +18,7 @@ import {get, getModelSchemaRef, post, requestBody} from '@loopback/rest';
 import {SecurityBindings, securityId, UserProfile} from '@loopback/security';
 import {genSalt, hash} from 'bcryptjs';
 import _ from 'lodash';
+import {Todo} from "../models";
 
 @model()
 export class NewUserRequest extends User {
@@ -27,6 +28,7 @@ export class NewUserRequest extends User {
   })
   password: string;
 }
+//export class NewUserRequest = Omit<NewUserRequestInt, 'id'>
 
 const CredentialsSchema = {
   type: 'object',
@@ -53,12 +55,9 @@ export const CredentialsRequestBody = {
 
 export class UserController {
   constructor(
-    @inject(TokenServiceBindings.TOKEN_SERVICE)
-    public jwtService: TokenService,
-    @inject(UserServiceBindings.USER_SERVICE)
-    public userService: MyUserService,
-    @inject(SecurityBindings.USER, {optional: true})
-    public user: UserProfile,
+    @inject(TokenServiceBindings.TOKEN_SERVICE) public jwtService: TokenService,
+    @inject(UserServiceBindings.USER_SERVICE) public userService: MyUserService,
+    @inject(SecurityBindings.USER, {optional: true}) public user: UserProfile,
     @repository(UserRepository) protected userRepository: UserRepository,
   ) {}
 
@@ -112,13 +111,8 @@ export class UserController {
     currentUserProfile: UserProfile,
   ): Promise<User> {
     // const userProfile = this.userService.convertToUserProfile(user);
-     console.log(currentUserProfile);
+    console.log(currentUserProfile);
     return await this.userRepository.findById(currentUserProfile.id);
-     // const userProfile = this.userService.convertToUserProfile(currentUserProfile);
-     // console.log(userProfile);
-
-    //
-    // return currentUserProfile[securityId];
   }
 
   @post('/signup', {
@@ -128,7 +122,7 @@ export class UserController {
         content: {
           'application/json': {
             schema: {
-              'x-ts-type': User,
+              'x-ts-type': NewUserRequest
             },
           },
         },
@@ -145,7 +139,7 @@ export class UserController {
         },
       },
     })
-    newUserRequest: NewUserRequest,
+    newUserRequest: Omit<NewUserRequest, 'id'>
   ): Promise<User> {
     const password = await hash(newUserRequest.password, await genSalt());
     const savedUser = await this.userRepository.create(

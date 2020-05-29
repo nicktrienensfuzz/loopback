@@ -4,6 +4,7 @@ exports.PingController = void 0;
 const tslib_1 = require("tslib");
 const rest_1 = require("@loopback/rest");
 const context_1 = require("@loopback/context");
+const lodash_1 = tslib_1.__importDefault(require("lodash"));
 /**
  * OpenAPI response for ping()
  */
@@ -18,7 +19,7 @@ const PING_RESPONSE = {
                     greeting: { type: 'string' },
                     date: { type: 'string' },
                     url: { type: 'string' },
-                    headers: {
+                    incomingRequest: {
                         type: 'object',
                         properties: {
                             'Content-Type': { type: 'string' },
@@ -40,12 +41,12 @@ let PingController = /** @class */ (() => {
         }
         // Map to `GET /ping`
         ping() {
-            // Reply with a greeting, the current time, the url, and request headers
+            console.log(lodash_1.default.pick(this.req, ['query', 'headers', 'body']));
             return {
                 greeting: 'Hello from LoopBack',
                 date: new Date(),
                 url: this.req.url,
-                headers: Object.assign({}, this.req.headers),
+                incomingRequest: lodash_1.default.pick(this.req, ['query', 'headers', 'body'])
             };
         }
     };

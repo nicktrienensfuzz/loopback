@@ -7,6 +7,10 @@ const application_1 = require("./application");
 tslib_1.__exportStar(require("./application"), exports);
 async function main(options = {}) {
     const app = new application_1.LoopApplication(options);
+    // app.configure(LoggingBindings.COMPONENT).to({
+    //   enableFluent: false, // default to true
+    //   enableHttpAccessLog: true, // default to true
+    // });
     await app.boot();
     await app.start();
     const url = app.restServer.url;

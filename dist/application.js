@@ -18,6 +18,7 @@ class LoopApplication extends boot_1.BootMixin(service_proxy_1.ServiceMixin(repo
         super(options);
         // Set up the custom sequence
         this.sequence(sequence_1.MySequence);
+        // this.component(LoggingComponent);
         // Set up default home page
         this.static('/', path_1.default.join(__dirname, '../public'));
         // Customize @loopback/rest-explorer configuration here

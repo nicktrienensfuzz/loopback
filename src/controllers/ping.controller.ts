@@ -1,5 +1,6 @@
 import {Request, RestBindings, get, ResponseObject} from '@loopback/rest';
 import {inject} from '@loopback/context';
+import _ from 'lodash';
 
 /**
  * OpenAPI response for ping()
@@ -15,7 +16,7 @@ const PING_RESPONSE: ResponseObject = {
           greeting: {type: 'string'},
           date: {type: 'string'},
           url: {type: 'string'},
-          headers: {
+          incomingRequest: {
             type: 'object',
             properties: {
               'Content-Type': {type: 'string'},
@@ -41,12 +42,12 @@ export class PingController {
     },
   })
   ping(): object {
-    // Reply with a greeting, the current time, the url, and request headers
+    console.log(_.pick(this.req, ['query', 'headers', 'body']));
     return {
       greeting: 'Hello from LoopBack',
       date: new Date(),
       url: this.req.url,
-      headers: Object.assign({}, this.req.headers),
+      incomingRequest: _.pick(this.req, ['query', 'headers', 'body'])
     };
   }
 }

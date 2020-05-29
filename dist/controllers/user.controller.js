@@ -30,6 +30,7 @@ let NewUserRequest = /** @class */ (() => {
     return NewUserRequest;
 })();
 exports.NewUserRequest = NewUserRequest;
+//export class NewUserRequest = Omit<NewUserRequestInt, 'id'>
 const CredentialsSchema = {
     type: 'object',
     required: ['email', 'password'],
@@ -69,8 +70,10 @@ let UserController = /** @class */ (() => {
             const token = await this.jwtService.generateToken(userProfile);
             return { token };
         }
-        async whoAmI(currentUserProfile) {
-            return currentUserProfile[security_1.securityId];
+        async me(currentUserProfile) {
+            // const userProfile = this.userService.convertToUserProfile(user);
+            console.log(currentUserProfile);
+            return await this.userRepository.findById(currentUserProfile.id);
         }
         async signUp(newUserRequest) {
             const password = await bcryptjs_1.hash(newUserRequest.password, await bcryptjs_1.genSalt());
@@ -106,12 +109,12 @@ let UserController = /** @class */ (() => {
     ], UserController.prototype, "login", null);
     tslib_1.__decorate([
         authentication_1.authenticate('jwt'),
-        rest_1.get('/whoAmI', {
+        rest_1.get('/me', {
             responses: {
                 '200': {
-                    description: '',
+                    description: 'return the current authed user',
                     schema: {
-                        type: 'string',
+                        'x-ts-type': authentication_jwt_1.User,
                     },
                 },
             },
@@ -120,16 +123,16 @@ let UserController = /** @class */ (() => {
         tslib_1.__metadata("design:type", Function),
         tslib_1.__metadata("design:paramtypes", [Object]),
         tslib_1.__metadata("design:returntype", Promise)
-    ], UserController.prototype, "whoAmI", null);
+    ], UserController.prototype, "me", null);
     tslib_1.__decorate([
         rest_1.post('/signup', {
             responses: {
                 '200': {
-                    description: 'User',
+                    description: 'signup create a user',
                     content: {
                         'application/json': {
                             schema: {
-                                'x-ts-type': authentication_jwt_1.User,
+                                'x-ts-type': NewUserRequest
                             },
                         },
                     },
@@ -146,7 +149,7 @@ let UserController = /** @class */ (() => {
             },
         })),
         tslib_1.__metadata("design:type", Function),
-        tslib_1.__metadata("design:paramtypes", [NewUserRequest]),
+        tslib_1.__metadata("design:paramtypes", [Object]),
         tslib_1.__metadata("design:returntype", Promise)
     ], UserController.prototype, "signUp", null);
     UserController = tslib_1.__decorate([

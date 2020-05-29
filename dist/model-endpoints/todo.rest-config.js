@@ -5,7 +5,7 @@ const config = {
     model: todo_model_1.Todo,
     pattern: 'CrudRest',
     dataSource: 'db',
-    basePath: '/todos',
+    basePath: '/tasks',
 };
 module.exports = config;
 //# sourceMappingURL=todo.rest-config.js.map
