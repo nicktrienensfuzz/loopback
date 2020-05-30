@@ -1941,9 +1941,14 @@
         "signature": "1cfb2025d3a78fc98742985a465de024f88d8e817e87330886a51d7fad211d0d",
         "affectsGlobalScope": false
       },
+      "./src/models/app-user.model.ts": {
+        "version": "c844e2497ad7d55ef0a230480c099480c080f3c9a1b55329b42d7202d1a3b293",
+        "signature": "a970fb17c64175e9893ea7e434a6bfe6acd65f9da42a66a138fafe54b5ec3c09",
+        "affectsGlobalScope": false
+      },
       "./src/models/index.ts": {
-        "version": "c68cdaaafe13dd9e396b56907241421053f23bd27258fcfb3257eec19c5e15ca",
-        "signature": "ef22aaf4576fb380dfa737c087c6323ebfb0f8825c284a50c95a89a8bc63483b",
+        "version": "9723eac041af566b0a985eaa7d3680049b6e7830bc103b3f8e5b86e9970eba8d",
+        "signature": "3f89fa13f39c06ad05ab22f20ad31f0639a1caed224bc0a30c6bbfd950a88947",
         "affectsGlobalScope": false
       },
       "./src/repositories/todo.repository.ts": {
@@ -1956,9 +1961,14 @@
         "signature": "c37548cb386c68f4963496c0139b3b16e686cc231e94efb8fd730a399434a460",
         "affectsGlobalScope": false
       },
+      "./src/repositories/app-user.repository.ts": {
+        "version": "cdd84ca28d6eba1816cdc2406f74dfabc06282a8b78387bfd769891dc48653ef",
+        "signature": "f719cc0ea663cfbf46f10ea118136a8306f8409ab78bb53ffe9754e81c57e937",
+        "affectsGlobalScope": false
+      },
       "./src/repositories/index.ts": {
-        "version": "37238d72c1425b2b5a7af80242edb0af9e204cc584fd8a3047ea9325b03b80fd",
-        "signature": "fb22aa4522a473b55493210eb8e3928d70c5bb02beb5fa44195e4759244d4ef8",
+        "version": "7ab20ab20e21690d2d7d7bc3be98497acaa7b8f417863257af30ab2cb60a3a98",
+        "signature": "f68e56975cb8bb3d44b635401d8097cb1436b4fc062cd1a493f84fd7d2cbbca4",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/lodash/ts3.1/common/common.d.ts": {
@@ -5300,9 +5310,15 @@
         "./node_modules/@types/node/util.d.ts",
         "./src/models/todo.model.ts"
       ],
+      "./src/models/app-user.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
       "./src/models/index.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
+        "./src/models/app-user.model.ts",
         "./src/models/task.model.ts",
         "./src/models/todo.model.ts"
       ],
@@ -5316,9 +5332,18 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
+      "./src/repositories/app-user.repository.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/datasources/index.ts",
+        "./src/models/index.ts"
+      ],
       "./src/repositories/index.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
+        "./src/repositories/app-user.repository.ts",
         "./src/repositories/task.repository.ts",
         "./src/repositories/todo.repository.ts"
       ],
@@ -8329,7 +8354,11 @@
       "./src/index.ts": [
         "./src/application.ts"
       ],
+      "./src/models/app-user.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts"
+      ],
       "./src/models/index.ts": [
+        "./src/models/app-user.model.ts",
         "./src/models/task.model.ts",
         "./src/models/todo.model.ts"
       ],
@@ -8339,7 +8368,13 @@
       "./src/models/todo.model.ts": [
         "./node_modules/@loopback/repository/dist/index.d.ts"
       ],
+      "./src/repositories/app-user.repository.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/datasources/index.ts",
+        "./src/models/index.ts"
+      ],
       "./src/repositories/index.ts": [
+        "./src/repositories/app-user.repository.ts",
         "./src/repositories/task.repository.ts",
         "./src/repositories/todo.repository.ts"
       ],
@@ -8806,9 +8841,11 @@
       "./src/index.ts",
       "./src/migrate.ts",
       "./src/model-endpoints/todo.rest-config.ts",
+      "./src/models/app-user.model.ts",
       "./src/models/index.ts",
       "./src/models/task.model.ts",
       "./src/models/todo.model.ts",
+      "./src/repositories/app-user.repository.ts",
       "./src/repositories/index.ts",
       "./src/repositories/task.repository.ts",
       "./src/repositories/todo.repository.ts",

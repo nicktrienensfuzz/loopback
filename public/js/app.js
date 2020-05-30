@@ -1,10 +1,10 @@
 function App() {
-    const { Container, Row, Col } = ReactBootstrap;
+    const {Container, Row, Col} = ReactBootstrap;
     return (
         <Container>
             <Row>
-                <Col md={{ offset: 3, span: 6 }}>
-                    <TodoListCard />
+                <Col md={{offset: 2, span: 8}}>
+                    <TodoListCard/>
                 </Col>
             </Row>
         </Container>
@@ -51,7 +51,7 @@ function TodoListCard() {
 
     return (
         <React.Fragment>
-            <AddItemForm onNewItem={onNewItem} />
+            <AddItemForm onNewItem={onNewItem}/>
             {items.length === 0 && (
                 <p className="text-center">No items yet! Add one above!</p>
             )}
@@ -67,10 +67,10 @@ function TodoListCard() {
     );
 }
 
-function AddItemForm({ onNewItem }) {
-    const { Form, InputGroup, Button } = ReactBootstrap;
+function AddItemForm({onNewItem}) {
+    const {Form, InputGroup, Button} = ReactBootstrap;
 
-    const [newItem, setNewItem] = React.useState('');
+    const [newItem, newDescription, setNewItem, setNewDescription] = React.useState('');
     const [submitting, setSubmitting] = React.useState(false);
 
     const submitNewItem = e => {
@@ -78,14 +78,15 @@ function AddItemForm({ onNewItem }) {
         setSubmitting(true);
         fetch('/todos', {
             method: 'POST',
-            body: JSON.stringify({ title: newItem, isComplete: false }),
-            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({title: newItem, isComplete: false}),
+            headers: {'Content-Type': 'application/json'},
         })
             .then(r => r.json())
             .then(item => {
                 onNewItem(item);
                 setSubmitting(false);
                 setNewItem('');
+                setNewDescription('');
             });
     };
 
@@ -109,13 +110,22 @@ function AddItemForm({ onNewItem }) {
                         {submitting ? 'Adding...' : 'Add Item'}
                     </Button>
                 </InputGroup.Append>
+                <InputGroup className="mb-5">
+                    <Form.Control
+                        value={newDescription}
+                        onChange={e => setNewDescription(e.target.value)}
+                        type="textarea"
+                        placeholder="description"
+                        aria-describedby="basic-addon1"
+                    />
+                </InputGroup>
             </InputGroup>
         </Form>
     );
 }
 
-function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
-    const { Container, Row, Col, Button } = ReactBootstrap;
+function ItemDisplay({item, onItemUpdate, onItemRemoval}) {
+    const {Container, Row, Col, Button} = ReactBootstrap;
 
     const toggleCompletion = () => {
         fetch(`/todos/${item.id}`, {
@@ -124,18 +134,18 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
                 title: item.title,
                 isComplete: !item.isComplete,
             }),
-            headers: { 'Content-Type': 'application/json' },
+            headers: {'Content-Type': 'application/json'},
         })
-            .then( fetch(`/todos/${item.id}`, {
-            method: 'GET',
-            headers: { 'Content-Type': 'application/json' },
+            .then(fetch(`/todos/${item.id}`, {
+                method: 'GET',
+                headers: {'Content-Type': 'application/json'},
             }))
             .then(r => r.json())
             .then(onItemUpdate);
     };
 
     const removeItem = () => {
-        fetch(`/todos/${item.id}`, { method: 'DELETE' }).then(() =>
+        fetch(`/todos/${item.id}`, {method: 'DELETE'}).then(() =>
             onItemRemoval(item),
         );
     };
@@ -173,7 +183,7 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
                         onClick={removeItem}
                         aria-label="Remove Item"
                     >
-                        <i className="fa fa-trash text-danger" />
+                        <i className="fa fa-trash text-danger"/>
                     </Button>
                 </Col>
             </Row>
@@ -181,4 +191,4 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
     );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));

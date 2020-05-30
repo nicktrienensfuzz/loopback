@@ -36,6 +36,7 @@ class LoopApplication extends boot_1.BootMixin(service_proxy_1.ServiceMixin(repo
                 nested: true,
             },
         };
+        // this.controller(TodoController);
         this.component(rest_crud_1.CrudRestComponent);
         // ------ ADD SNIPPET AT THE BOTTOM ---------
         // Mount authentication system
