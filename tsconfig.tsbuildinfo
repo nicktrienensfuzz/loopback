@@ -1946,9 +1946,19 @@
         "signature": "a970fb17c64175e9893ea7e434a6bfe6acd65f9da42a66a138fafe54b5ec3c09",
         "affectsGlobalScope": false
       },
+      "./src/models/movie-favorites.model.ts": {
+        "version": "5debfb1807108f1388d1faaa3781f8026fd7d9866c7855d1a7f372f6eab9d30e",
+        "signature": "0ea05a713471bf0518ae24a24b37ae8377c706c7fad7af124f2cc79a5c3bc48e",
+        "affectsGlobalScope": false
+      },
+      "./src/models/movie.model.ts": {
+        "version": "aebf2db34fb209390e53ab786ef6a49d430746106359f42f72c463b65885ef62",
+        "signature": "2fd0d68a3080dcee6e6637c138abab94a433c010964476a17f841ab113209dc8",
+        "affectsGlobalScope": false
+      },
       "./src/models/index.ts": {
-        "version": "9723eac041af566b0a985eaa7d3680049b6e7830bc103b3f8e5b86e9970eba8d",
-        "signature": "3f89fa13f39c06ad05ab22f20ad31f0639a1caed224bc0a30c6bbfd950a88947",
+        "version": "6617db2c4efa76f196be6b6e2a4497be42c1ad731e813c10385ba778d1c88477",
+        "signature": "22fbbd31d442b3d66cabcace04cc5aedaa0901d77a4745b82027ab1f770c3d70",
         "affectsGlobalScope": false
       },
       "./src/repositories/todo.repository.ts": {
@@ -1966,9 +1976,19 @@
         "signature": "f719cc0ea663cfbf46f10ea118136a8306f8409ab78bb53ffe9754e81c57e937",
         "affectsGlobalScope": false
       },
+      "./src/repositories/movie-favorites.repository.ts": {
+        "version": "893eb3ba3e8d22f8cce74a4b50eb41798a82f5f196dcb61ea7db6608dc86945e",
+        "signature": "2a36f0ab9d05b21c43a9468b72be26481c3c298babc13436118079a501fb5b78",
+        "affectsGlobalScope": false
+      },
+      "./src/repositories/movie.repository.ts": {
+        "version": "04bf2401f9e282deb7b16b6129f9f2e7d05899b7c264f062d5ef17b72370f635",
+        "signature": "61df3653e3caeaf9e9a81dabe0841879832c2861115966880271dd7f1d374ee3",
+        "affectsGlobalScope": false
+      },
       "./src/repositories/index.ts": {
-        "version": "7ab20ab20e21690d2d7d7bc3be98497acaa7b8f417863257af30ab2cb60a3a98",
-        "signature": "f68e56975cb8bb3d44b635401d8097cb1436b4fc062cd1a493f84fd7d2cbbca4",
+        "version": "8d3f9f2f3243961e0eac4d99c014632c6be4b81850f5dcb5a8d14f63684164ad",
+        "signature": "403f875b2a9639b85c3f3825310e94f73350f333ba02b9942b246fd949d43dad",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/lodash/ts3.1/common/common.d.ts": {
@@ -2046,9 +2066,19 @@
         "signature": "9dfe431ab1485e17a6055e186c49da9d23af74b965f2e99f8acc6c958778608f",
         "affectsGlobalScope": false
       },
+      "./src/services/app-user-service.service.ts": {
+        "version": "b10192ed4853733fe334ddd60148d6e0cd36694e08d1f9a0a2c9b243e862ef76",
+        "signature": "03498eac3fcb7f4b89fbfe1820752fab37b809ecedef0aed5528a81650982077",
+        "affectsGlobalScope": false
+      },
+      "./src/services/index.ts": {
+        "version": "6e722154416806375f24fa490c302052768e001b1832056434735012087a5631",
+        "signature": "6e722154416806375f24fa490c302052768e001b1832056434735012087a5631",
+        "affectsGlobalScope": false
+      },
       "./src/controllers/user.controller.ts": {
-        "version": "3496dcda92ddbd683a82d7d51caf271c2cb374dfa1e4686bafeef9b1ee7ffb4c",
-        "signature": "cbdec217642f79bcc58dc45cfed4d7866eb020ba96ddcae15959b0ad99423304",
+        "version": "77494d260bec2a3d99f405a0ba4cd1426151931df3f70d62a0a3f4a9c53e0285",
+        "signature": "d9108560f6b0485028bdd52df34bec325b1535673c0e895407e575387474f7f3",
         "affectsGlobalScope": false
       },
       "./src/controllers/ping.controller.ts": {
@@ -2056,13 +2086,18 @@
         "signature": "80e3e158fbbb22cab068c3f91ec262086822f90ca629e02984060b8caf571993",
         "affectsGlobalScope": false
       },
+      "./src/controllers/movie-movie-favorites.controller.ts": {
+        "version": "ebca54f030d270b581deb31305df6759e08d0545697a8251431d934b1054a2e6",
+        "signature": "84e43759dd9fe3db708ddefd14a3d3dfe54f177f50ebe6a8e420d67154f599e9",
+        "affectsGlobalScope": false
+      },
       "./src/controllers/index.ts": {
-        "version": "965534126c1396e8843840b72f9a1ae0420b47026838db12304c7bc65c80dea0",
-        "signature": "f1db145422e78fd1ff8151d177c2ee8f808742b0e29bdf52bf3b7344b5046810",
+        "version": "70a3126c97e040932035be73e77a140872589ce3e1bf95f6543a18876df30fa7",
+        "signature": "daf59ac91885126200e7bcedaa562c0310bb1ecdcf98c6073e336c14e61bb1c9",
         "affectsGlobalScope": false
       },
       "./src/application.ts": {
-        "version": "7419509bddcbe4780be99a30a8e39e08dc279f2cfed8a0ba8ce75c205bca93b3",
+        "version": "573624a70609eb8413b1152bb9d79cb465bc813ad5cd88ac72f48b06a3149d31",
         "signature": "5a9cb5a23edc9b0d74022e6f2324c034bfc344662d5f24bf0d527786459ce88c",
         "affectsGlobalScope": false
       },
@@ -2191,13 +2226,28 @@
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
+      "./src/controllers/movies.controller.ts": {
+        "version": "b883cb2743b3a5e070984ce69e49d9086e9d8ebed30b0f51a095db2d371c6770",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "affectsGlobalScope": false
+      },
       "./src/controllers/task.controller.ts": {
         "version": "f1e0de3ec78fed489de74711a0d15ca30056628a98c436d0e9cc9bd47546b50e",
         "signature": "599bffbd8f9628477babb18e07ca0de8d8f6affcb628b19a0c2d6156948fc715",
         "affectsGlobalScope": false
       },
+      "./src/model-endpoints/app-user.rest-config.ts": {
+        "version": "834ccf72b2902c937b29730911159aa9380cf25436a8e045db5ad66502c91205",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "./src/model-endpoints/movie.rest-config.ts": {
+        "version": "12c014dc391419a549b7f5ada6c88f409a3f85a3a7b5fe7377d2bc68ca339459",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
       "./src/model-endpoints/todo.rest-config.ts": {
-        "version": "4e8ec308cd2c5326488678a53242b8c7ee25f4a0fa32d2d572cb4e5e7227d476",
+        "version": "f07f1a364490611f0f841611bec24ec616d170f7748df1515ae8338fb779c489",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -5226,14 +5276,28 @@
         "./node_modules/@types/node/util.d.ts",
         "./src/controllers/index.ts",
         "./src/datasources/index.ts",
-        "./src/sequence.ts"
+        "./src/sequence.ts",
+        "./src/services/index.ts"
       ],
       "./src/controllers/index.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
+        "./src/controllers/movie-movie-favorites.controller.ts",
         "./src/controllers/ping.controller.ts",
         "./src/controllers/todo.controller.ts",
         "./src/controllers/user.controller.ts"
+      ],
+      "./src/controllers/movie-movie-favorites.controller.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/models/index.ts",
+        "./src/repositories/index.ts"
+      ],
+      "./src/controllers/movies.controller.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
       ],
       "./src/controllers/ping.controller.ts": [
         "./node_modules/@loopback/context/dist/index.d.ts",
@@ -5280,7 +5344,7 @@
         "./node_modules/@types/lodash/ts3.1/index.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
-        "./src/models/index.ts"
+        "./src/services/index.ts"
       ],
       "./src/datasources/db.datasource.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
@@ -5304,11 +5368,23 @@
         "./node_modules/@types/node/util.d.ts",
         "./src/application.ts"
       ],
+      "./src/model-endpoints/app-user.rest-config.ts": [
+        "./node_modules/@loopback/rest-crud/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/models/index.ts"
+      ],
+      "./src/model-endpoints/movie.rest-config.ts": [
+        "./node_modules/@loopback/rest-crud/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/models/index.ts"
+      ],
       "./src/model-endpoints/todo.rest-config.ts": [
         "./node_modules/@loopback/rest-crud/dist/index.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
-        "./src/models/todo.model.ts"
+        "./src/models/index.ts"
       ],
       "./src/models/app-user.model.ts": [
         "./node_modules/@loopback/repository/dist/index.d.ts",
@@ -5319,8 +5395,21 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
         "./src/models/app-user.model.ts",
+        "./src/models/movie-favorites.model.ts",
+        "./src/models/movie.model.ts",
         "./src/models/task.model.ts",
         "./src/models/todo.model.ts"
+      ],
+      "./src/models/movie-favorites.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/models/movie.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/models/movie-favorites.model.ts"
       ],
       "./src/models/task.model.ts": [
         "./node_modules/@loopback/repository/dist/index.d.ts",
@@ -5344,8 +5433,27 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
         "./src/repositories/app-user.repository.ts",
+        "./src/repositories/movie-favorites.repository.ts",
+        "./src/repositories/movie.repository.ts",
         "./src/repositories/task.repository.ts",
         "./src/repositories/todo.repository.ts"
+      ],
+      "./src/repositories/movie-favorites.repository.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/datasources/index.ts",
+        "./src/models/index.ts"
+      ],
+      "./src/repositories/movie.repository.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/datasources/index.ts",
+        "./src/models/index.ts",
+        "./src/repositories/movie-favorites.repository.ts"
       ],
       "./src/repositories/task.repository.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
@@ -5375,6 +5483,22 @@
         "./node_modules/@loopback/rest/dist/index.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/services/app-user-service.service.ts": [
+        "./node_modules/@loopback/authentication-jwt/dist/index.d.ts",
+        "./node_modules/@loopback/authentication/dist/index.d.ts",
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@loopback/security/dist/index.d.ts",
+        "./node_modules/@types/bcryptjs/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/services/index.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/services/app-user-service.service.ts"
       ],
       "../node_modules/@types/duplexify/index.d.ts": [
         "./node_modules/@types/node/stream.d.ts",
@@ -8314,9 +8438,15 @@
         "./node_modules/loopback-datasource-juggler/index.d.ts"
       ],
       "./src/controllers/index.ts": [
+        "./src/controllers/movie-movie-favorites.controller.ts",
         "./src/controllers/ping.controller.ts",
         "./src/controllers/todo.controller.ts",
         "./src/controllers/user.controller.ts"
+      ],
+      "./src/controllers/movie-movie-favorites.controller.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/models/index.ts",
+        "./src/repositories/index.ts"
       ],
       "./src/controllers/ping.controller.ts": [
         "./node_modules/@loopback/rest/dist/index.d.ts"
@@ -8342,7 +8472,8 @@
       "./src/controllers/user.controller.ts": [
         "./node_modules/@loopback/authentication-jwt/dist/index.d.ts",
         "./node_modules/@loopback/authentication/dist/index.d.ts",
-        "./node_modules/@loopback/security/dist/index.d.ts"
+        "./node_modules/@loopback/security/dist/index.d.ts",
+        "./src/services/index.ts"
       ],
       "./src/datasources/db.datasource.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
@@ -8359,8 +8490,17 @@
       ],
       "./src/models/index.ts": [
         "./src/models/app-user.model.ts",
+        "./src/models/movie-favorites.model.ts",
+        "./src/models/movie.model.ts",
         "./src/models/task.model.ts",
         "./src/models/todo.model.ts"
+      ],
+      "./src/models/movie-favorites.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts"
+      ],
+      "./src/models/movie.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/models/movie-favorites.model.ts"
       ],
       "./src/models/task.model.ts": [
         "./node_modules/@loopback/repository/dist/index.d.ts"
@@ -8375,8 +8515,20 @@
       ],
       "./src/repositories/index.ts": [
         "./src/repositories/app-user.repository.ts",
+        "./src/repositories/movie-favorites.repository.ts",
+        "./src/repositories/movie.repository.ts",
         "./src/repositories/task.repository.ts",
         "./src/repositories/todo.repository.ts"
+      ],
+      "./src/repositories/movie-favorites.repository.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/models/index.ts"
+      ],
+      "./src/repositories/movie.repository.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/models/index.ts",
+        "./src/repositories/movie-favorites.repository.ts"
       ],
       "./src/repositories/task.repository.ts": [
         "./node_modules/@loopback/repository/dist/index.d.ts",
@@ -8390,6 +8542,14 @@
         "./node_modules/@loopback/authentication/dist/index.d.ts",
         "./node_modules/@loopback/context/dist/index.d.ts",
         "./node_modules/@loopback/rest/dist/index.d.ts"
+      ],
+      "./src/services/app-user-service.service.ts": [
+        "./node_modules/@loopback/authentication-jwt/dist/index.d.ts",
+        "./node_modules/@loopback/authentication/dist/index.d.ts",
+        "./node_modules/@loopback/security/dist/index.d.ts"
+      ],
+      "./src/services/index.ts": [
+        "./src/services/app-user-service.service.ts"
       ],
       "../node_modules/@types/duplexify/index.d.ts": [
         "./node_modules/@types/node/stream.d.ts",
@@ -8832,6 +8992,8 @@
       "./src/__tests__/acceptance/test-helper.ts",
       "./src/application.ts",
       "./src/controllers/index.ts",
+      "./src/controllers/movie-movie-favorites.controller.ts",
+      "./src/controllers/movies.controller.ts",
       "./src/controllers/ping.controller.ts",
       "./src/controllers/task.controller.ts",
       "./src/controllers/todo.controller.ts",
@@ -8840,17 +9002,25 @@
       "./src/datasources/index.ts",
       "./src/index.ts",
       "./src/migrate.ts",
+      "./src/model-endpoints/app-user.rest-config.ts",
+      "./src/model-endpoints/movie.rest-config.ts",
       "./src/model-endpoints/todo.rest-config.ts",
       "./src/models/app-user.model.ts",
       "./src/models/index.ts",
+      "./src/models/movie-favorites.model.ts",
+      "./src/models/movie.model.ts",
       "./src/models/task.model.ts",
       "./src/models/todo.model.ts",
       "./src/repositories/app-user.repository.ts",
       "./src/repositories/index.ts",
+      "./src/repositories/movie-favorites.repository.ts",
+      "./src/repositories/movie.repository.ts",
       "./src/repositories/task.repository.ts",
       "./src/repositories/todo.repository.ts",
       "./src/sample.api-builder.ts",
       "./src/sequence.ts",
+      "./src/services/app-user-service.service.ts",
+      "./src/services/index.ts",
       "../node_modules/@types/duplexify/index.d.ts",
       "../node_modules/@types/long/index.d.ts"
     ]

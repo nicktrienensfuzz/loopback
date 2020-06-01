@@ -8,4 +8,6 @@ const tslib_1 = require("tslib");
 tslib_1.__exportStar(require("./todo.repository"), exports);
 tslib_1.__exportStar(require("./task.repository"), exports);
 tslib_1.__exportStar(require("./app-user.repository"), exports);
+tslib_1.__exportStar(require("./movie.repository"), exports);
+tslib_1.__exportStar(require("./movie-favorites.repository"), exports);
 //# sourceMappingURL=index.js.map

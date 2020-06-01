@@ -1,0 +1,1 @@
+{"version":3,"file":"movie.rest-config.js","sourceRoot":"","sources":["../../src/model-endpoints/movie.rest-config.ts"],"names":[],"mappings":";;AACA,sCAAgC;AAEhC,MAAM,MAAM,GAA2B;IACrC,KAAK,EAAE,cAAK;IACZ,OAAO,EAAE,UAAU;IACnB,UAAU,EAAE,IAAI;IAChB,QAAQ,EAAE,SAAS;CACpB,CAAC;AACF,MAAM,CAAC,OAAO,GAAG,MAAM,CAAC"}

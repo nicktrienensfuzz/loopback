@@ -1,5 +1,5 @@
 import {ModelCrudRestApiConfig} from '@loopback/rest-crud';
-import {Todo} from '../models/todo.model';
+import {Todo} from '../models';
 
 const config: ModelCrudRestApiConfig = {
   model: Todo,

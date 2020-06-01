@@ -19,6 +19,7 @@ import {CrudRestComponent} from '@loopback/rest-crud';
 import {DbDataSource} from './datasources';
 import {LoggingComponent} from '@loopback/extension-logging';
 import {TodoController} from "./controllers";
+import {AppUserService} from "./services";
 
 export {ApplicationConfig};
 
@@ -67,6 +68,6 @@ export class LoopApplication extends BootMixin(
     // ------------- END OF SNIPPET -------------
 
     //new
-    this.bind(UserServiceBindings.USER_SERVICE).toClass(MyUserService);
+    this.bind(UserServiceBindings.USER_SERVICE).toClass(AppUserService);
   }
 }

@@ -70,7 +70,9 @@ function TodoListCard() {
 function AddItemForm({onNewItem}) {
     const {Form, InputGroup, Button} = ReactBootstrap;
 
-    const [newItem, newDescription, setNewItem, setNewDescription] = React.useState('');
+    const [newItem, setNewItem] = React.useState('');
+    const [newDescription, setNewDescription] = React.useState('');
+
     const [submitting, setSubmitting] = React.useState(false);
 
     const submitNewItem = e => {
@@ -78,7 +80,7 @@ function AddItemForm({onNewItem}) {
         setSubmitting(true);
         fetch('/todos', {
             method: 'POST',
-            body: JSON.stringify({title: newItem, isComplete: false}),
+            body: JSON.stringify({title: newItem, desc: newDescription, isComplete: false}),
             headers: {'Content-Type': 'application/json'},
         })
             .then(r => r.json())
@@ -114,7 +116,7 @@ function AddItemForm({onNewItem}) {
                     <Form.Control
                         value={newDescription}
                         onChange={e => setNewDescription(e.target.value)}
-                        type="textarea"
+                        type="text"
                         placeholder="description"
                         aria-describedby="basic-addon1"
                     />
@@ -174,7 +176,17 @@ function ItemDisplay({item, onItemUpdate, onItemRemoval}) {
                     </Button>
                 </Col>
                 <Col xs={10} className="name">
+
+                <Container fluid> <Row>
+                <Col xs={10} className="name">
                     {item.title}
+                </Col></Row>
+                <Row>
+                <Col xs={10} className="name">
+                    {item.desc}
+                </Col>
+                </Row>
+                </Container>
                 </Col>
                 <Col xs={1} className="text-center remove">
                     <Button

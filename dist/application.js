@@ -13,6 +13,7 @@ const path_1 = tslib_1.__importDefault(require("path"));
 const sequence_1 = require("./sequence");
 const rest_crud_1 = require("@loopback/rest-crud");
 const datasources_1 = require("./datasources");
+const services_1 = require("./services");
 class LoopApplication extends boot_1.BootMixin(service_proxy_1.ServiceMixin(repository_1.RepositoryMixin(rest_1.RestApplication))) {
     constructor(options = {}) {
         super(options);
@@ -47,7 +48,7 @@ class LoopApplication extends boot_1.BootMixin(service_proxy_1.ServiceMixin(repo
         this.dataSource(datasources_1.DbDataSource, authentication_jwt_1.UserServiceBindings.DATASOURCE_NAME);
         // ------------- END OF SNIPPET -------------
         //new
-        this.bind(authentication_jwt_1.UserServiceBindings.USER_SERVICE).toClass(authentication_jwt_1.MyUserService);
+        this.bind(authentication_jwt_1.UserServiceBindings.USER_SERVICE).toClass(services_1.AppUserService);
     }
 }
 exports.LoopApplication = LoopApplication;

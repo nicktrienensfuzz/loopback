@@ -8,4 +8,6 @@ const tslib_1 = require("tslib");
 tslib_1.__exportStar(require("./todo.controller"), exports);
 tslib_1.__exportStar(require("./user.controller"), exports);
 tslib_1.__exportStar(require("./ping.controller"), exports);
+//export * from './movies.controller';
+tslib_1.__exportStar(require("./movie-movie-favorites.controller"), exports);
 //# sourceMappingURL=index.js.map

@@ -18,7 +18,7 @@ import {get, getModelSchemaRef, post, requestBody} from '@loopback/rest';
 import {SecurityBindings, securityId, UserProfile} from '@loopback/security';
 import {genSalt, hash} from 'bcryptjs';
 import _ from 'lodash';
-import {Todo} from "../models";
+import {AppUserService} from "../services";
 
 @model()
 export class NewUserRequest extends User {
@@ -56,7 +56,7 @@ export const CredentialsRequestBody = {
 export class UserController {
   constructor(
     @inject(TokenServiceBindings.TOKEN_SERVICE) public jwtService: TokenService,
-    @inject(UserServiceBindings.USER_SERVICE) public userService: MyUserService,
+    @inject(UserServiceBindings.USER_SERVICE) public userService: AppUserService,
     @inject(SecurityBindings.USER, {optional: true}) public user: UserProfile,
     @repository(UserRepository) protected userRepository: UserRepository,
   ) {}
@@ -141,6 +141,10 @@ export class UserController {
     })
     newUserRequest: Omit<NewUserRequest, 'id'>
   ): Promise<User> {
+
+    console.log("fire");
+    await this.userService.verifyEmailNotTaken(newUserRequest.email);
+    console.log("finished");
     const password = await hash(newUserRequest.password, await genSalt());
     const savedUser = await this.userRepository.create(
       _.omit(newUserRequest, 'password'),
