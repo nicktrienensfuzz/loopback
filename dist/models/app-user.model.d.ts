@@ -1,8 +1,12 @@
-import { Entity } from '@loopback/repository';
-export declare class AppUser extends Entity {
+import { User } from "@loopback/authentication-jwt";
+export declare enum Role {
+    admin = "admin",
+    viewer = "viewer",
+    kiosk = "kiosk"
+}
+export declare class AppUser extends User {
     name: string;
-    id?: string;
-    email: string;
+    role: string;
     [prop: string]: any;
     constructor(data?: Partial<AppUser>);
 }

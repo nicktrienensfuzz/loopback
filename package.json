@@ -53,8 +53,10 @@
     "@loopback/security": "^0.2.11",
     "@loopback/service-proxy": "^2.3.1",
     "@types/bcryptjs": "^2.4.2",
+    "@types/nodemailer": "^6.4.0",
     "bcryptjs": "^2.4.3",
     "loopback-connector-rest": "^3.6.0",
+    "nodemailer": "^6.4.8",
     "tslib": "^2.0.0"
   },
   "devDependencies": {

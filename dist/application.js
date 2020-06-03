@@ -49,6 +49,7 @@ class LoopApplication extends boot_1.BootMixin(service_proxy_1.ServiceMixin(repo
         // ------------- END OF SNIPPET -------------
         //new
         this.bind(authentication_jwt_1.UserServiceBindings.USER_SERVICE).toClass(services_1.AppUserService);
+        // this.bind(MyMailerServiceBinding.Mailer).toClass( MyMailerService);
     }
 }
 exports.LoopApplication = LoopApplication;

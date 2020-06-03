@@ -49,6 +49,16 @@ let PingController = /** @class */ (() => {
                 incomingRequest: lodash_1.default.pick(this.req, ['query', 'headers', 'body'])
             };
         }
+        // Map to `GET /ping`
+        echo() {
+            console.log(lodash_1.default.pick(this.req, ['query', 'headers', 'body']));
+            return {
+                greeting: 'Hello from LoopBack',
+                date: new Date(),
+                url: this.req.url,
+                incomingRequest: lodash_1.default.pick(this.req, ['query', 'headers', 'body'])
+            };
+        }
     };
     tslib_1.__decorate([
         rest_1.get('/ping', {
@@ -60,6 +70,16 @@ let PingController = /** @class */ (() => {
         tslib_1.__metadata("design:paramtypes", []),
         tslib_1.__metadata("design:returntype", Object)
     ], PingController.prototype, "ping", null);
+    tslib_1.__decorate([
+        rest_1.post('/echo', {
+            responses: {
+                '200': PING_RESPONSE,
+            },
+        }),
+        tslib_1.__metadata("design:type", Function),
+        tslib_1.__metadata("design:paramtypes", []),
+        tslib_1.__metadata("design:returntype", Object)
+    ], PingController.prototype, "echo", null);
     PingController = tslib_1.__decorate([
         tslib_1.__param(0, context_1.inject(rest_1.RestBindings.Http.REQUEST)),
         tslib_1.__metadata("design:paramtypes", [Object])

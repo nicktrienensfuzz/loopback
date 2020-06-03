@@ -2,8 +2,9 @@
   "ids": {
     "Todo": 59,
     "Task": 4,
-    "User": 15,
-    "UserCredentials": 11
+    "User": 33,
+    "AppUser": 1,
+    "UserCredentials": 29
   },
   "models": {
     "Task": {
@@ -14,31 +15,52 @@
     "Todo": {
       "50": "{\"title\":\"Review Designs and Ensure ipad pro 12\\\" is the target\",\"isComplete\":false,\"id\":50}",
       "57": "{\"title\":\"test\",\"isComplete\":false,\"id\":57}",
-      "58": "{\"title\":\"asdfas\",\"desc\":\"234123\",\"isComplete\":false,\"id\":58}"
+      "58": "{\"title\":\"description\",\"desc\":\"234123\",\"isComplete\":false,\"id\":58}"
     },
+    "AppUser": {},
     "User": {
-      "4": "{\"username\":\"testuser1\",\"email\":\"testuser1@abc.com\",\"id\":4}",
-      "string": "{\"id\":\"string\",\"realm\":\"string\",\"username\":\"string\",\"email\":\"string\",\"emailVerified\":true,\"verificationToken\":\"string\",\"additionalProp1\":{}}",
-      "494c7530-3a5a-4cac-b427-71d2f1cb2121": "{\"id\":\"494c7530-3a5a-4cac-b427-71d2f1cb2121\",\"realm\":\"string\",\"username\":\"string\",\"email\":\"string\",\"emailVerified\":true,\"verificationToken\":\"string\",\"additionalProp1\":{}}",
       "984f9bbf-538d-41e2-8ff2-b9a37ea4f729": "{\"id\":\"984f9bbf-538d-41e2-8ff2-b9a37ea4f729\",\"realm\":\"string\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"verificationToken\":\"string\",\"additionalProp1\":{}}",
       "459df73d-66f5-431d-bce7-5078aaf1236c": "{\"id\":\"459df73d-66f5-431d-bce7-5078aaf1236c\",\"username\":\"Nick\",\"email\":\"nick+2@fuzz.pro\",\"emailVerified\":true,\"verificationToken\":\"testing\",\"phone\":\"360-472-0372\",\"additionalProp1\":{}}",
-      "2f30afed-be30-4372-80bb-51a118c48a90": "{\"id\":\"2f30afed-be30-4372-80bb-51a118c48a90\",\"username\":\"Nick\",\"email\":\"nick+2@fuzz.pro\",\"emailVerified\":true,\"verificationToken\":\"testing\",\"phone\":\"360-472-0372\",\"additionalProp1\":{}}",
-      "36278a76-bc41-4c7c-a15b-6fe859065b4a": "{\"id\":\"36278a76-bc41-4c7c-a15b-6fe859065b4a\",\"username\":\"Nick\",\"email\":\"nick+2@fuzz.pro\",\"emailVerified\":true,\"verificationToken\":\"testing\",\"phone\":\"360-472-0372\",\"additionalProp1\":{}}",
-      "83327074-a2ff-4f29-8a6d-5498219a3566": "{\"id\":\"83327074-a2ff-4f29-8a6d-5498219a3566\",\"username\":\"Nick\",\"email\":\"nick+2@fuzz.pro\",\"emailVerified\":true,\"verificationToken\":\"testing\",\"phone\":\"360-472-0372\",\"additionalProp1\":{}}",
-      "a098c688-1266-4e86-9367-2047eb753e8b": "{\"id\":\"a098c688-1266-4e86-9367-2047eb753e8b\",\"username\":\"Nick\",\"email\":\"nick+2@fuzz.pro\",\"emailVerified\":true,\"verificationToken\":\"testing\",\"phone\":\"360-472-0372\",\"additionalProp1\":{}}",
-      "9621d2bb-a5ee-4987-9314-01665ed3c0e4": "{\"id\":\"9621d2bb-a5ee-4987-9314-01665ed3c0e4\",\"username\":\"Nick\",\"email\":\"nick+2@fuzz.pro\",\"emailVerified\":true,\"verificationToken\":\"testing\",\"phone\":\"360-472-0372\",\"additionalProp1\":{}}"
+      "a36fa54c-3712-4018-89f3-d1e991f31e22": "{\"id\":\"a36fa54c-3712-4018-89f3-d1e991f31e22\",\"username\":\"Nick\",\"email\":\"nick+2@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "b4b5f219-f506-4c1a-b0b5-42812f7d5dfe": "{\"id\":\"b4b5f219-f506-4c1a-b0b5-42812f7d5dfe\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "49153248-26b1-46bb-96dc-7523cf334ab1": "{\"id\":\"49153248-26b1-46bb-96dc-7523cf334ab1\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "5199a58b-fdc4-4dab-9c96-531d81e247c8": "{\"id\":\"5199a58b-fdc4-4dab-9c96-531d81e247c8\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "a4e2f760-d575-4393-87b9-5f107a4045b0": "{\"id\":\"a4e2f760-d575-4393-87b9-5f107a4045b0\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "eb082e17-707f-44f1-889d-9e15c21dd672": "{\"id\":\"eb082e17-707f-44f1-889d-9e15c21dd672\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "341bcb3a-d789-49f7-89c4-494a7a5ca55f": "{\"id\":\"341bcb3a-d789-49f7-89c4-494a7a5ca55f\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "36652508-591d-4200-81fe-8f051c4ec818": "{\"id\":\"36652508-591d-4200-81fe-8f051c4ec818\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "e87b687d-14e1-46a2-9ef6-4305fa92f7e4": "{\"id\":\"e87b687d-14e1-46a2-9ef6-4305fa92f7e4\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "68c0e2eb-2644-468d-ac2d-bad687e89a1d": "{\"id\":\"68c0e2eb-2644-468d-ac2d-bad687e89a1d\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "161fbef5-b08f-4237-8f37-3c9a75a2635e": "{\"id\":\"161fbef5-b08f-4237-8f37-3c9a75a2635e\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "ab6f25eb-ab07-4f7d-8c51-fba1a4088a20": "{\"id\":\"ab6f25eb-ab07-4f7d-8c51-fba1a4088a20\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "d588ea0f-ce04-412f-9388-99b9bbcbd124": "{\"id\":\"d588ea0f-ce04-412f-9388-99b9bbcbd124\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "add1fada-6e77-4091-9b6d-0f35bdaf5691": "{\"id\":\"add1fada-6e77-4091-9b6d-0f35bdaf5691\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "f4730942-9831-45ff-ad8e-0b7809bc2fd8": "{\"id\":\"f4730942-9831-45ff-ad8e-0b7809bc2fd8\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "8007340b-7b92-4eeb-a616-775f21e297e9": "{\"id\":\"8007340b-7b92-4eeb-a616-775f21e297e9\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "aed290ce-e3fc-4eb8-af07-bfd29698646f": "{\"id\":\"aed290ce-e3fc-4eb8-af07-bfd29698646f\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\"}",
+      "79bb7bcd-4210-4f9e-9774-627ec2ee8edf": "{\"id\":\"79bb7bcd-4210-4f9e-9774-627ec2ee8edf\",\"username\":\"Nick\",\"email\":\"nick@fuzz.pro\",\"emailVerified\":true,\"phone\":\"360-472-0372\",\"name \":\"nick\",\"role\":\"test\"}"
     },
     "UserCredentials": {
-      "1": "{\"password\":\"$2a$10$QrcA7GDOZ06TTXEBhuz87On8mcapb9qoU3rjWb7Z5pwBv7ZAbmXwa\",\"userId\":4,\"id\":1}",
-      "e4bb84c2-867a-416f-856b-65c6630a773d": "{\"id\":\"e4bb84c2-867a-416f-856b-65c6630a773d\",\"password\":\"$2a$10$YtjHtL1yXK8aok9WOcCFRe.ARqLH8reYMkmqfOhGlrL4CNLVXEJtm\",\"userId\":\"string\"}",
-      "ccd0510e-e3ce-4408-9812-5c662a2ca184": "{\"id\":\"ccd0510e-e3ce-4408-9812-5c662a2ca184\",\"password\":\"$2a$10$n38suQT/2qH6/JoTqdYnqOC0TYBN9oSznpX3y6dvXPdtzGxz4JCjC\",\"userId\":\"494c7530-3a5a-4cac-b427-71d2f1cb2121\"}",
       "e44a1306-2d07-4f59-9913-fc04d9aa25f5": "{\"id\":\"e44a1306-2d07-4f59-9913-fc04d9aa25f5\",\"password\":\"$2a$10$FUceiJq6j8nv2dYmY8.bt.iyMTPeHQm1kixjMDp6iQ9dw8W9G5pQe\",\"userId\":\"984f9bbf-538d-41e2-8ff2-b9a37ea4f729\"}",
       "995e2a71-fc60-4085-9d2d-343b62ad811d": "{\"id\":\"995e2a71-fc60-4085-9d2d-343b62ad811d\",\"password\":\"$2a$10$EG/W7OX68JhBAm/bQ4oc8u6gzWxmEd.ccOHlZx3NYFul3la8ppaEy\",\"userId\":\"459df73d-66f5-431d-bce7-5078aaf1236c\"}",
-      "ae4f708e-327a-42ca-87ba-6da11b107a59": "{\"id\":\"ae4f708e-327a-42ca-87ba-6da11b107a59\",\"password\":\"$2a$10$cS4UwNsQ8o7jSh229Fki0.6Qf3KPpa/e5M9.lFHRzGefAz3ej72Ny\",\"userId\":\"2f30afed-be30-4372-80bb-51a118c48a90\"}",
-      "56f594ab-e5cb-46aa-85e6-fd94e5206562": "{\"id\":\"56f594ab-e5cb-46aa-85e6-fd94e5206562\",\"password\":\"$2a$10$Az2YQ3vfgj3NsYc7Jfg8CeIYnND./Pev/No2szIB414MPme/7XavS\",\"userId\":\"36278a76-bc41-4c7c-a15b-6fe859065b4a\"}",
-      "5e3156cd-a99e-4def-bd75-5552b18bec8b": "{\"id\":\"5e3156cd-a99e-4def-bd75-5552b18bec8b\",\"password\":\"$2a$10$xB5Me6nAkHSsOzAcjb8B6e55JjB5AWezJZ1zJKzl5fNSEOni5e0/a\",\"userId\":\"83327074-a2ff-4f29-8a6d-5498219a3566\"}",
-      "8f016e4c-ee89-47a1-87c1-034f3749bc36": "{\"id\":\"8f016e4c-ee89-47a1-87c1-034f3749bc36\",\"password\":\"$2a$10$CsEZWgRpCWmT0K2z41NuyOywKA0yzYMhF9fv84RTj0sl7uAHTYVSy\",\"userId\":\"a098c688-1266-4e86-9367-2047eb753e8b\"}",
-      "0d67b702-d84a-4041-afa8-38b799e897ec": "{\"id\":\"0d67b702-d84a-4041-afa8-38b799e897ec\",\"password\":\"$2a$10$r8rW8jk8qXKbwDUpZf1Yje6SV50P9jsKo6w2.fUTHz64wENl0alVq\",\"userId\":\"9621d2bb-a5ee-4987-9314-01665ed3c0e4\"}"
+      "de9ed747-4e72-4827-bf1d-a05f107aefa3": "{\"id\":\"de9ed747-4e72-4827-bf1d-a05f107aefa3\",\"password\":\"$2a$10$fdDxqCiZjtN7enah8.PAPOcrNkH2jYfm6kOwXqy3BbHyJLhPiT6ve\",\"userId\":\"a36fa54c-3712-4018-89f3-d1e991f31e22\"}",
+      "e46da5a7-43a1-4354-984d-8524210b6923": "{\"id\":\"e46da5a7-43a1-4354-984d-8524210b6923\",\"password\":\"$2a$10$qtEJNwSMqrL4xIAtgrYq3O7XtWBOHbdPsFrGm0P7Q.KWLT3UkLQJW\",\"userId\":\"b4b5f219-f506-4c1a-b0b5-42812f7d5dfe\"}",
+      "4e809f3f-8b62-402d-9f75-fece248f813b": "{\"id\":\"4e809f3f-8b62-402d-9f75-fece248f813b\",\"password\":\"$2a$10$tPupBWIOs.kIDuSyNhmOO.kN7OCWiLIpc2NarXwqvtc7LhI1lot9G\",\"userId\":\"49153248-26b1-46bb-96dc-7523cf334ab1\"}",
+      "13970a5e-41f2-44c1-a4fe-a9ada6bcb753": "{\"id\":\"13970a5e-41f2-44c1-a4fe-a9ada6bcb753\",\"password\":\"$2a$10$CcD3t5SShsgTAiTugR5CL.v5RBdIH2.eiLig/v14K.Uyt6j8ITBvm\",\"userId\":\"5199a58b-fdc4-4dab-9c96-531d81e247c8\"}",
+      "4b98e5eb-732c-4258-ae47-fc90d6390c5b": "{\"id\":\"4b98e5eb-732c-4258-ae47-fc90d6390c5b\",\"password\":\"$2a$10$S3TGbeIeEg2UWg/lg1YaLut0VgLc0YUudBfJv/6DFuVeH5k/wmInC\",\"userId\":\"a4e2f760-d575-4393-87b9-5f107a4045b0\"}",
+      "bde4e7b6-94f2-4b09-963b-46ac9ad41f52": "{\"id\":\"bde4e7b6-94f2-4b09-963b-46ac9ad41f52\",\"password\":\"$2a$10$gTmy1NZXgxaukTfKOQBkUOidStZnnqpJmZBV2H6.izBx.kIgWX12K\",\"userId\":\"eb082e17-707f-44f1-889d-9e15c21dd672\"}",
+      "aa71c5e5-64c4-45fb-818c-f56dcae9c028": "{\"id\":\"aa71c5e5-64c4-45fb-818c-f56dcae9c028\",\"password\":\"$2a$10$PVcFw1G66KpI5DktOqslR.POexUer/9ViAAJHEDtLOtMMgtr5PIam\",\"userId\":\"341bcb3a-d789-49f7-89c4-494a7a5ca55f\"}",
+      "9c3b14d0-d291-4e0b-98e9-a74a13cbc237": "{\"id\":\"9c3b14d0-d291-4e0b-98e9-a74a13cbc237\",\"password\":\"$2a$10$u7Uzy7TzSXjNEftPgxD1fOofiSPpZb.0fPGUIPJQukP/G8uTzLZ9W\",\"userId\":\"36652508-591d-4200-81fe-8f051c4ec818\"}",
+      "402cccb9-ba1d-400a-8660-92f30776d95d": "{\"id\":\"402cccb9-ba1d-400a-8660-92f30776d95d\",\"password\":\"$2a$10$cRqn1SqHV.UIaoNzEKS/AO6jiuIQrQUIlgK3fNvw3QPfPq9ucJJ8G\",\"userId\":\"e87b687d-14e1-46a2-9ef6-4305fa92f7e4\"}",
+      "642cfbc8-3286-4e18-9793-317338d6390c": "{\"id\":\"642cfbc8-3286-4e18-9793-317338d6390c\",\"password\":\"$2a$10$BoIfl8//RmcZC6GhRPgzNexEOxcNVzQzPZaM3a.EKNfmk0Dvus5JK\",\"userId\":\"68c0e2eb-2644-468d-ac2d-bad687e89a1d\"}",
+      "508b0a26-d4be-40c0-a59d-67fdb5f03479": "{\"id\":\"508b0a26-d4be-40c0-a59d-67fdb5f03479\",\"password\":\"$2a$10$1JWdGgqd46ogmL3E5h9SJeb4TpCCZTI9Sriy9ZmrHMvzn2XyUiZaC\",\"userId\":\"161fbef5-b08f-4237-8f37-3c9a75a2635e\"}",
+      "0515b374-e76b-4a23-89e2-4e7b6ea1f175": "{\"id\":\"0515b374-e76b-4a23-89e2-4e7b6ea1f175\",\"password\":\"$2a$10$NtkvOthIF4J8ilPTp/hOOu63DIZhoIOqTXDw57fjNH3EQsw0/Mab6\",\"userId\":\"ab6f25eb-ab07-4f7d-8c51-fba1a4088a20\"}",
+      "f490a22f-4471-4177-850e-69631c2f7ae5": "{\"id\":\"f490a22f-4471-4177-850e-69631c2f7ae5\",\"password\":\"$2a$10$7neJf28IYHm5/8cQBlRTqe/UDRRB8AKS6.CiqSZPsC3TJzNxt8ZN.\",\"userId\":\"d588ea0f-ce04-412f-9388-99b9bbcbd124\"}",
+      "4de57340-6066-467d-b6e7-d498edc0a656": "{\"id\":\"4de57340-6066-467d-b6e7-d498edc0a656\",\"password\":\"$2a$10$QbxDzUR6fnbgkPCUZ4KE1.Bjm3ca7mu2d/KVH9ZCsZmYpYfRhAdJ.\",\"userId\":\"add1fada-6e77-4091-9b6d-0f35bdaf5691\"}",
+      "2babb048-9815-4348-a272-2c4f7c75a611": "{\"id\":\"2babb048-9815-4348-a272-2c4f7c75a611\",\"password\":\"$2a$10$l4Li.Qzei0A.X7r7dmVkseoJKKb7M4uib565EzPjtoCzrsr.RMYQi\",\"userId\":\"f4730942-9831-45ff-ad8e-0b7809bc2fd8\"}",
+      "80fc6fe6-33b1-43bb-9ae7-ce4285b6ac9c": "{\"id\":\"80fc6fe6-33b1-43bb-9ae7-ce4285b6ac9c\",\"password\":\"$2a$10$a7XjLp.nVrrIHk24ZvjLMOY5betbxj7UKlEmzxskmKwWG6AOBiQ/O\",\"userId\":\"8007340b-7b92-4eeb-a616-775f21e297e9\"}",
+      "1a48692d-395e-489d-bfbe-29504876e106": "{\"id\":\"1a48692d-395e-489d-bfbe-29504876e106\",\"password\":\"$2a$10$E8uNZ4NNj0h82cqKFGljMOopsW8HtpUqqbhidk8f.iBC2CTSVi5Ei\",\"userId\":\"aed290ce-e3fc-4eb8-af07-bfd29698646f\"}",
+      "c7ae22a4-685c-4056-996f-5dbba7a861f1": "{\"id\":\"c7ae22a4-685c-4056-996f-5dbba7a861f1\",\"password\":\"$2a$10$SL3GFO5jbLkIkiYeZwIZJOZtI.B77scRv8FAGAtOoE9jG9lHa4F.u\",\"userId\":\"79bb7bcd-4210-4f9e-9774-627ec2ee8edf\"}"
     }
   }
 }

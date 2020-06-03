@@ -1,7 +1,9 @@
 import { TokenService } from '@loopback/authentication';
-import { Credentials, User, UserRepository } from '@loopback/authentication-jwt';
+import { Credentials, User } from '@loopback/authentication-jwt';
 import { UserProfile } from '@loopback/security';
 import { AppUserService } from "../services";
+import { AppUser } from "../models";
+import { AppUserRepository } from "../repositories";
 export declare class NewUserRequest extends User {
     password: string;
 }
@@ -31,11 +33,11 @@ export declare class UserController {
     jwtService: TokenService;
     userService: AppUserService;
     user: UserProfile;
-    protected userRepository: UserRepository;
-    constructor(jwtService: TokenService, userService: AppUserService, user: UserProfile, userRepository: UserRepository);
+    protected userRepository: AppUserRepository;
+    constructor(jwtService: TokenService, userService: AppUserService, user: UserProfile, userRepository: AppUserRepository);
     login(credentials: Credentials): Promise<{
         token: string;
     }>;
     me(currentUserProfile: UserProfile): Promise<User>;
-    signUp(newUserRequest: Omit<NewUserRequest, 'id'>): Promise<User>;
+    signUp(newUserRequest: Omit<NewUserRequest, 'id'>): Promise<AppUser>;
 }

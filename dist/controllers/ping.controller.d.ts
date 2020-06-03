@@ -7,4 +7,5 @@ export declare class PingController {
     private req;
     constructor(req: Request);
     ping(): object;
+    echo(): object;
 }

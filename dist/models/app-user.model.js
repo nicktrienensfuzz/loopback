@@ -1,10 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AppUser = void 0;
+exports.AppUser = exports.Role = void 0;
 const tslib_1 = require("tslib");
 const repository_1 = require("@loopback/repository");
+const authentication_jwt_1 = require("@loopback/authentication-jwt");
+var Role;
+(function (Role) {
+    Role["admin"] = "admin";
+    Role["viewer"] = "viewer";
+    Role["kiosk"] = "kiosk";
+})(Role = exports.Role || (exports.Role = {}));
 let AppUser = /** @class */ (() => {
-    let AppUser = class AppUser extends repository_1.Entity {
+    let AppUser = class AppUser extends authentication_jwt_1.User {
         constructor(data) {
             super(data);
         }
@@ -19,18 +26,13 @@ let AppUser = /** @class */ (() => {
     tslib_1.__decorate([
         repository_1.property({
             type: 'string',
-            id: true,
-            generated: true,
-        }),
-        tslib_1.__metadata("design:type", String)
-    ], AppUser.prototype, "id", void 0);
-    tslib_1.__decorate([
-        repository_1.property({
-            type: 'string',
+            jsonSchema: {
+                enum: Object.values(Role),
+            },
             required: true,
         }),
         tslib_1.__metadata("design:type", String)
-    ], AppUser.prototype, "email", void 0);
+    ], AppUser.prototype, "role", void 0);
     AppUser = tslib_1.__decorate([
         repository_1.model({ settings: { strict: false } }),
         tslib_1.__metadata("design:paramtypes", [Object])

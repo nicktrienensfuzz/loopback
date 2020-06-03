@@ -20,6 +20,7 @@ import {DbDataSource} from './datasources';
 import {LoggingComponent} from '@loopback/extension-logging';
 import {TodoController} from "./controllers";
 import {AppUserService} from "./services";
+//import {MyMailerService, MyMailerServiceBinding} from "./services/MailerService";
 
 export {ApplicationConfig};
 
@@ -69,5 +70,6 @@ export class LoopApplication extends BootMixin(
 
     //new
     this.bind(UserServiceBindings.USER_SERVICE).toClass(AppUserService);
+   // this.bind(MyMailerServiceBinding.Mailer).toClass( MyMailerService);
   }
 }

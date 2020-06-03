@@ -15,6 +15,7 @@ const security_1 = require("@loopback/security");
 const bcryptjs_1 = require("bcryptjs");
 const lodash_1 = tslib_1.__importDefault(require("lodash"));
 const services_1 = require("../services");
+const repositories_1 = require("../repositories");
 let NewUserRequest = /** @class */ (() => {
     let NewUserRequest = class NewUserRequest extends authentication_jwt_1.User {
     };
@@ -82,6 +83,7 @@ let UserController = /** @class */ (() => {
             console.log("finished");
             const password = await bcryptjs_1.hash(newUserRequest.password, await bcryptjs_1.genSalt());
             const savedUser = await this.userRepository.create(lodash_1.default.omit(newUserRequest, 'password'));
+            console.log(savedUser);
             await this.userRepository.userCredentials(savedUser.id).create({ password });
             return savedUser;
         }
@@ -161,7 +163,7 @@ let UserController = /** @class */ (() => {
         tslib_1.__param(1, core_1.inject(authentication_jwt_1.UserServiceBindings.USER_SERVICE)),
         tslib_1.__param(2, core_1.inject(security_1.SecurityBindings.USER, { optional: true })),
         tslib_1.__param(3, repository_1.repository(authentication_jwt_1.UserRepository)),
-        tslib_1.__metadata("design:paramtypes", [Object, services_1.AppUserService, Object, authentication_jwt_1.UserRepository])
+        tslib_1.__metadata("design:paramtypes", [Object, services_1.AppUserService, Object, repositories_1.AppUserRepository])
     ], UserController);
     return UserController;
 })();

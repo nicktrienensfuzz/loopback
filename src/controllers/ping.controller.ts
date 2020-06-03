@@ -1,4 +1,4 @@
-import {Request, RestBindings, get, ResponseObject} from '@loopback/rest';
+import {Request, RestBindings, get, ResponseObject, post} from '@loopback/rest';
 import {inject} from '@loopback/context';
 import _ from 'lodash';
 
@@ -42,6 +42,22 @@ export class PingController {
     },
   })
   ping(): object {
+    console.log(_.pick(this.req, ['query', 'headers', 'body']));
+    return {
+      greeting: 'Hello from LoopBack',
+      date: new Date(),
+      url: this.req.url,
+      incomingRequest: _.pick(this.req, ['query', 'headers', 'body'])
+    };
+  }
+
+  // Map to `GET /ping`
+  @post('/echo', {
+    responses: {
+      '200': PING_RESPONSE,
+    },
+  })
+  echo(): object {
     console.log(_.pick(this.req, ['query', 'headers', 'body']));
     return {
       greeting: 'Hello from LoopBack',
